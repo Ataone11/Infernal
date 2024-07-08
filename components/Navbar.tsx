@@ -34,7 +34,8 @@ const Navbar = () => {
             </a>
           </Link>
           <Link href="/seguros">
-            <a
+            <button
+              disabled={true}
               className={`${
                 router.pathname === '/seguros'
                   ? 'underline underline-offset-8 font-semibold'
@@ -42,10 +43,11 @@ const Navbar = () => {
               } text-normal  w-4`}
             >
               Artistas
-            </a>
+            </button>
           </Link>
           <Link href="/asesorias">
-            <a
+            <button
+              disabled={true}
               className={`${
                 router.pathname === '/asesorias'
                   ? 'underline underline-offset-8 font-semibold'
@@ -53,11 +55,11 @@ const Navbar = () => {
               } text-normal  w-4`}
             >
               Programacion
-            </a>
+            </button>
           </Link>
 
           <Link href="/contacto">
-            <a
+            <button
               className={`${
                 router.pathname === '/asesorias'
                   ? 'underline underline-offset-8 font-semibold'
@@ -65,7 +67,7 @@ const Navbar = () => {
               } text-normal w-4`}
             >
               Contacto
-            </a>
+            </button>
           </Link>
         </div>
         <div
