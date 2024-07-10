@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="lg:grid grid-cols-4 gap-2 items-end  hidden justify-between w-full ">
+        <div className="lg:grid grid-cols-5 gap-2 items-end  hidden justify-between w-full ">
           <Link href="/">
             <a
               className={`${
@@ -58,10 +58,22 @@ const Navbar = () => {
             </button>
           </Link>
 
+          <Link href="/nosotros">
+            <button
+              className={`${
+                router.pathname === '/nosotros'
+                  ? 'underline underline-offset-8 font-semibold'
+                  : 'text-black font-semibold hover:text-white transition-colors'
+              } text-normal w-4`}
+            >
+              Nosotros
+            </button>
+          </Link>
+
           <Link href="/contacto">
             <button
               className={`${
-                router.pathname === '/asesorias'
+                router.pathname === '/contacto'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
               } text-normal w-4`}
