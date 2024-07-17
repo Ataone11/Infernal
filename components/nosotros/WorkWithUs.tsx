@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import Image from 'next/image'
 import { FC, useState } from 'react'
 import { PulseLoader } from 'react-spinners'
-import imageForm from '../../assets/images/nosotros/Nosotros_Formulario.jpg'
+import imageForm from '../../assets/images/nosotros/Nosotros_Formulario.png'
 import { API_URL } from '../../utils/constants'
 
 const WorkWithUs: FC<any> = () => {
@@ -16,7 +16,7 @@ const WorkWithUs: FC<any> = () => {
         Trabaja con nosotros
       </h3>
       <div className="space-y-9 flex flex-col items-center lg:flex-row lg:justify-between max-w-[1100px] m-auto">
-        <div className="relative w-[80%] h-[200px] mx-8 md:w-1/2 xl:w-[524px] lg:h-[300px] xl:h-[322px] before:mx-auto before:absolute before:bottom-[-9%]  before:rounded-2xl before:right-[-5%] before:w-[50%] before:h-full before:bg-[#6B6B6B]/10">
+        <div className="relative w-[80%] h-[200px] mx-8 md:w-1/2 xl:w-[524px] lg:h-[300px] xl:h-[322px] before:mx-auto before:absolute before:bottom-[-9%]  before:rounded-2xl before:right-[-5%] before:w-[50%] before:h-full before:bg-black">
           <Image
             className="relative rounded-xl"
             src={imageForm}
@@ -81,7 +81,7 @@ const WorkWithUs: FC<any> = () => {
               <div className="grid grid-cols-1 w-full gap-3 mb-4">
                 <label
                   htmlFor="nombre"
-                  className="text-small font-semibold text-blackOmega"
+                  className="text-small font-semibold text-white"
                 >
                   Nombre
                 </label>
@@ -101,7 +101,7 @@ const WorkWithUs: FC<any> = () => {
               <div className="grid grid-cols-1 w-full gap-3 mb-4">
                 <label
                   htmlFor="phone"
-                  className="text-small font-semibold text-blackOmega"
+                  className="text-small font-semibold text-white"
                 >
                   Ingresa tu número de teléfono
                 </label>
@@ -118,7 +118,7 @@ const WorkWithUs: FC<any> = () => {
               <div className="grid grid-cols-1 w-full gap-3 mb-4">
                 <label
                   htmlFor="email"
-                  className="text-small font-semibold text-blackOmega"
+                  className="text-small font-semibold text-white"
                 >
                   Correo electrónico
                 </label>
@@ -136,7 +136,7 @@ const WorkWithUs: FC<any> = () => {
               </div>
               <div className="flex flex-col gap-4 justify-start items-start pt-5">
                 <label
-                  className="text-small font-semibold text-blackOmega"
+                  className="text-small font-semibold text-white"
                   htmlFor=""
                 >
                   Adjuntar hoja de vida

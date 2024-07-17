@@ -20,58 +20,31 @@ interface ITimeLineItem {
 const timeData: ITimeLineItem[] = [
   {
     id: 1,
-    age: '1997',
+    age: '2021',
     description:
-      'Omega Seguros es constituida el 17 de septiembre en la ciudad de Villavicencio. Contó con una delegación de SURA para la expedición de la compañía',
+      'Nuestro primer Festival En la casa villas de granada, una cosa excepcional en donde hasta calleron los aliens para poguear ',
     image: photo1
   },
   {
     id: 2,
-    age: '1998',
+    age: '2021',
     description:
-      'El equipo de trabajo crece para brindar una mejor experiencia y disminuir el tiempo de respuesta a nuestros clientes.',
+      'Nuestra segunda edicion del Festival el cual se hizo en lo alto de la ciudad en el barrio egipto donde se punkeo toda la noche',
     image: photo2
   },
   {
     id: 3,
-    age: '2002',
+    age: '2023',
     description:
-      'Se implementa un Sistema de Gestión de Calidad para mejorar el rendimiento organizacional.',
+      'Nuestra ultima edicion donde la hicimos en el acueducto de la 68 con 80, estuvo de locos y hubo muchos zombies borrachines por la calles',
     image: photo3
   },
   {
-    id: 4,
-    age: '2004',
-    description:
-      'Incursionamos en el sector Estatal adjudicando contratos de intermediación de seguros.',
-    image: photo4
-  },
-  {
-    id: 5,
-    age: '2005',
-    description:
-      'Asesoramos, intermediamos y acompañamos en grandes proyectos de infraestructura del Meta.',
-    image: photo5
-  },
-  {
-    id: 6,
-    age: '2007',
-    description:
-      'Se establecen alianzas estratégicas con la apertura de más de 15 claves con compañías de seguros.',
-    image: photo6
-  },
-  {
-    id: 7,
-    age: '2016',
-    description:
-      'Adjudicatarios del proceso de la agencia nacional de Colombia compra eficiente para la intermediación de seguros de las entidades de orden Nacional.',
-    image: photo7
-  },
-  {
     id: 8,
-    age: '2017',
-    description: 'Implementación del SGSST.',
-    image: photo8
+    age: '2024',
+    description:
+      'Nuestra proxima edicion en desarrollo este año y probablemente la ams grande, esperemos que los muertos vivos no se coman al publico este año',
+    image: photo4
   }
 ]
 const TimeLine = () => {
@@ -83,7 +56,7 @@ const TimeLine = () => {
   return (
     <div className="container w-full mx-auto pb-16 md:pb-64 lg:pb-16">
       <h3 className="text-redOmega text-large lg:text-extraLarge uppercase tracking-[0.2em] font-bold w-10/12 lg:w-full mx-auto text-center py-10">
-        Nuestra historia en el tiempo
+        Historia
       </h3>
       <div className="flex flex-col md:justify-center md:flex-row w-full md:w-[90%] mx-auto  mb-14 max-h-full">
         {timeData.map((item) => (
@@ -106,7 +79,7 @@ const TimeLine = () => {
               >
                 <div
                   className={`h-[30px] w-[4px] md:h-[3px] md:w-[25px] xl:w-[40px] ${
-                    item.id === 1 ? 'bg-white' : 'bg-redOmega'
+                    item.id === 1 ? 'bg-black' : 'bg-redOmega'
                   }`}
                 />
                 <div
@@ -118,7 +91,7 @@ const TimeLine = () => {
                 ></div>
                 <div
                   className={`h-[30px] w-[4px] md:h-[3px] md:w-[25px] xl:w-[40px] ${
-                    item.id === 8 ? 'bg-white' : 'bg-redOmega'
+                    item.id === 8 ? 'bg-black' : 'bg-redOmega'
                   }`}
                 />
                 <span
@@ -145,7 +118,7 @@ const TimeLine = () => {
                       <span className="text-redOmega tracking-[0.2em] font-semibold">
                         {item.age}
                       </span>
-                      <p className=" text-extraSmall md:w-auto">
+                      <p className="text-white text-extraSmall md:w-auto">
                         {item.description}
                       </p>
                     </div>
