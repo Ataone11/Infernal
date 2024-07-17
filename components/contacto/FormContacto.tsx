@@ -145,7 +145,7 @@ const FormContacto = () => {
           Convocatoria abierta
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 container mx-auto md:pb-5">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-x-10 container mx-auto md:pb-5">
         <div className="relative flex justify-start sm:justify-center pt-8 md:hidden after:bg-red-900 after:content-[''] after:absolute after:w-[90%] after:h-[80%] after:rounded-3xl after:top-16 image-shadow after:self-end after:right-0 w-[70%] mx-auto min-w-[250px]">
           <Image
             src={contacto}
@@ -426,42 +426,6 @@ const FormContacto = () => {
             )}
           </div>
         </div>
-        <form className="grid grid-cols-2 gap-4">
-          <div>
-            <h1 className="font-bold mb-2 text-white">Nombre</h1>
-            <div className="flex flex-wrap mb-6 md:my-1 lg:my-3">
-              <div className="w-full">
-                <input
-                  className="appearance-none block w-full  text-normal border border-greyOmega rounded-lg  py-2 px-3 leading-tight focus:outline-none  "
-                  name="contacto"
-                  onChange={handleChange}
-                  type="text"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col relative w-full px-5 md:px-0">
-            <h1 className="text-left font-bold md:pt-0 font-myriad mb-2 text-white">
-              Roll
-            </h1>
-            <select
-              className="rounded-xl py-2 w-full border-greyOmega border-2 my-2 md:my-0"
-              name="asesoria"
-              onChange={handleChange}
-              required
-            >
-              <option disabled selected></option>
-              <option value="Programas de seguros">Banda</option>
-              <option value="Patrosinador">Patrosinador</option>
-              <option value="Contrataciones jurídicas">
-                Trabaja con nosotros
-              </option>
-              <option value="Análisis de administración de riesgos">Etc</option>
-              <option value="No necesito ninguna asesoría">pglo</option>
-            </select>
-          </div>
-        </form>
       </div>
     </div>
   )
