@@ -1,14 +1,11 @@
 import Image from 'next/image'
 import { Waypoint } from 'react-waypoint'
 import { useState, useEffect } from 'react'
-import photo1 from '../../assets/images/nosotros/Nosotros_Historia_1997.jpg'
-import photo2 from '../../assets/images/nosotros/Nosotros_Historia_1998.jpg'
-import photo3 from '../../assets/images/nosotros/Nosotros_Historia_2000.jpg'
-import photo4 from '../../assets/images/nosotros/Nosotros_Historia_2004.jpg'
-import photo5 from '../../assets/images/nosotros/Nosotros_Historia_2005.jpg'
-import photo6 from '../../assets/images/nosotros/Nosotros_Historia_2007.jpg'
-import photo7 from '../../assets/images/nosotros/Nosotros_Historia_2016.jpg'
-import photo8 from '../../assets/images/nosotros/Nosotros_Historia_2017.jpg'
+import photo1 from '../../assets/images/nosotros/infernal1.jpg'
+import photo2 from '../../assets/images/nosotros/infernal2.png'
+import photo3 from '../../assets/images/nosotros/infernal3.jpg'
+import photo4 from '../../assets/images/nosotros/infernal4.jpg'
+
 interface ITimeLineItem {
   id: number
   age: string

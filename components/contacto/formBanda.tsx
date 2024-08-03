@@ -53,13 +53,13 @@ const FormBanda = () => {
   const [servicios, setServicios] = useState(dataSecure[0])
   const [descarga, setDescarga] = useState(false)
   const [data, setData] = useState<any>({
-    nombre: '',
-    correo: '',
+    banda: '',
     contacto: '',
-    mensaje: '',
-    asesoria: '',
-    seguro: dataSecure[0].title,
-    tipoPersona: 'Empresa'
+    correo: '',
+    telefono: '',
+    numeroIntegrantes: '',
+    redSocial: '',
+    reseña: ''
   })
 
   const [sent, setSent] = useState<boolean>(false)
@@ -141,12 +141,12 @@ const FormBanda = () => {
     <div className="sm:mx-3 min-h-full">
       <div className="flex flex-col w-full my-0 items-center">
         <form className="w-full md:pt-5 px-5" onSubmit={handleSubmit}>
-          <h1 className="font-bold mb-2 text-white">Nombre del integrantes</h1>
+          <h1 className="font-bold mb-2 text-white">Nombre de la bandaa</h1>
           <div className="flex flex-wrap mb-6 md:my-1 lg:my-3">
             <div className="w-full">
               <input
                 className="appearance-none block w-full  text-normal border border-greyOmega rounded-lg   py-2 px-3 leading-tight focus:outline-none "
-                name="nombre"
+                name="banda"
                 onChange={handleChange}
                 type="text"
                 required

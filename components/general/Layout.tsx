@@ -10,7 +10,7 @@ const Layout = ({ children }: any) => {
         className=" bg-[#25D366] gap-3 py-2 lg:py-3 pl-4 pr-8 rounded-l-full flex justify-center items-center fixed z-[100] top-[80%] right-0 cursor-pointer translate-x-[9.2em] hover:translate-x-0 transition-all duration-500 ease-in-out"
         onClick={() =>
           window.open(
-            'https://api.whatsapp.com/send?phone=573506579596&text=Hola%2C%20quiero%20saber%20más%20sobre%20Omega%20Seguros!',
+            'https://api.whatsapp.com/send?phone=573115418442&text=Hola%2C%20quiero%20saber%20más%20sobre%20Infernal%20Fest!',
             '_blank'
           )
         }

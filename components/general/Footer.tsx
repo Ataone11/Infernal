@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="text-white hidden flex-col justify-center items-center md:justify-start md:items-start lg:flex">
             <a
-              href="https://omega-strapi-files.s3.amazonaws.com/POLITICA_DE_TRATAMIENTO_DE_DATOS_PERSONALES_43d3964292.pdf?updated_at=2022-05-24T17:25:44.211Z"
+              href="https://www.facebook.com/profile.php?id=61563871315722"
               target="_blank"
               rel="noreferrer"
               className="underline"
@@ -96,7 +96,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.facebook.com/omegasegurosco"
+            href="https://www.facebook.com/profile.php?id=61563871315722"
             target="_blank"
             rel="noreferrer"
           >
@@ -107,7 +107,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://twitter.com/omegasegurosco"
+            href="https://www.facebook.com/profile.php?id=61563871315722"
             target="_blank"
             rel="noreferrer"
           >
@@ -118,7 +118,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.instagram.com/omegasegurosco"
+            href="https://www.instagram.com/infernalfestt/"
             target="_blank"
             rel="noreferrer"
           >
@@ -128,19 +128,6 @@ const Footer = () => {
               alt=""
             />
           </a>
-        </div>
-        <div className="flex gap-x-10 lg:hidden">
-          <a
-            href=""
-            target="_blank"
-            rel="noreferrer"
-            className="underline text-center text-white text-extraSmall md:text-small"
-          >
-            Política de privacidad
-          </a>
-          <span className="text-white text-center font-light text-extraSmall md:text-small">
-            Copyright ©2021 OMEGA SEGUROS.
-          </span>
         </div>
       </div>
     </div>
