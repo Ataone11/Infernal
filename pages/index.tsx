@@ -3,6 +3,7 @@ import Banner from '../components/home/Banner'
 import { API_URL, QUERY_IMAGE } from '../utils/constants'
 import Image from 'next/image'
 import flayer from '../assets/images/home/infernalweb.jpg'
+import iv from '../assets/images/home/proximo.png'
 
 import CountdownTimer from '../components/home/timer'
 
@@ -29,8 +30,17 @@ const Home = ({ banners }: { banners: any[] }) => {
           </div>
         </div>
 
-        <div className="flex md:my-12"></div>
+        <div className="flex "></div>
         <CountdownTimer />
+        <div className="m-auto  relative flex w-[300px] h-[200px]">
+          <Image
+            src={iv}
+            layout="fill"
+            width={100}
+            height={50}
+            objectFit="cover"
+          />
+        </div>
         <br />
       </div>
     </div>
