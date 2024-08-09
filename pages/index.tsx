@@ -9,7 +9,7 @@ import CountdownTimer from '../components/home/timer'
 
 const Home = ({ banners }: { banners: any[] }) => {
   return (
-    <div className="bg-black w-full h-full">
+    <div className="bg-black w-full h-full min-h-[900px]">
       <div className=" w-11/12 m-auto container ">
         <Banner banner={banners} />
       </div>
