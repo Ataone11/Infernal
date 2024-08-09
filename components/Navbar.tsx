@@ -4,6 +4,7 @@ import menu from '../assets/icons/menuburger.svg'
 import MenuMobile from './MenuMobile'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import logoOmegaWhite from '../assets/images/home/infernal.png'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true)
@@ -16,9 +17,9 @@ const Navbar = () => {
           className="w-full relative z-40 cursor-pointer"
           onClick={() => router.push('/')}
         >
-          <Link href="/">
-            <a className={`text-black font-bold text-3xl`}>Infernal Fest</a>
-          </Link>
+          <div className="relative w-[140px] h-[40px]">
+            <Image src={logoOmegaWhite} layout="fill" />
+          </div>
         </div>
 
         <div className="lg:grid grid-cols-5 gap-2 items-end  hidden justify-between w-full ">

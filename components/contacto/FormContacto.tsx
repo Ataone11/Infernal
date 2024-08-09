@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import contacto from '../../assets/images/nosotros/infernalw.jpg'
+import contacto from '../../assets/images/nosotros/infernalw.png'
 import iconVida from '../../assets/icons/vida.svg'
 import iconHouse from '../../assets/icons/hogar.svg'
 import iconPymes from '../../assets/icons/pymes.svg'
@@ -111,20 +111,8 @@ const FormContacto = () => {
         className="grid grid-cols-1 md:grid-cols-2  gap-x-10 container mx-auto md:pb-5"
         onSubmit={handleSubmit}
       >
-        <div className="relative flex justify-start sm:justify-center pt-8 md:hidden after:bg-red-900 after:content-[''] after:absolute after:w-[90%] after:h-[80%] after:rounded-3xl after:top-16 image-shadow after:self-end after:right-0 w-[70%] mx-auto min-w-[250px]">
-          <Image
-            src={contacto}
-            width={360}
-            height={180}
-            layout="fixed"
-            className="rounded-2xl pt-5 z-10"
-            objectFit="cover"
-            objectPosition="50% 50%"
-          />
-        </div>
-
         <div className="w-full flex flex-col items-start lg:mx-auto md:w-full my-5 md:my-0 lg:max-w-[530px] md:px-5">
-          <div className="flex flex-col relative w-full px-5 md:px-0">
+          <div className="flex flex-col relative w-full px-8 md:px-0">
             <h1 className="text-left font-bold md:pt-0 lg:pt-3 font-myriad mb-2 text-white">
               Numero de integrantes
             </h1>
@@ -153,11 +141,11 @@ const FormContacto = () => {
               />
             </div>
 
-            <div className="pt-8 md:pt-10 hidden lg:hidden md:block">
+            <div className="pt-5  hidden lg:hidden md:block">
               <Image
                 src={contacto}
                 width={328}
-                height={179}
+                height={519}
                 layout="fixed"
                 className="rounded-3xl pt-5"
                 objectFit="cover"
@@ -169,7 +157,7 @@ const FormContacto = () => {
               <Image
                 src={contacto}
                 width={420}
-                height={229}
+                height={519}
                 layout="fixed"
                 className="rounded-3xl pt-5"
                 objectFit="cover"
@@ -177,11 +165,11 @@ const FormContacto = () => {
               />
             </div>
 
-            <div className="pt-8 md:pt-14 hidden lg:hidden 2xl:block">
+            <div className="pt-8 hidden lg:hidden 2xl:block">
               <Image
                 src={contacto}
                 width={478}
-                height={279}
+                height={520}
                 layout="fixed"
                 className="rounded-3xl pt-5"
                 objectFit="cover"
