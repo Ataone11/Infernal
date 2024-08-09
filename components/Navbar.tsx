@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#FE0E06] w-full py-2 sticky inset-0 m-auto shadow-lg flex px-5 z-[999]  items-center">
-      <div className="flex justify-between w-full max-w-[1500px] mx-auto items-center">
+      <div className="flex justify-between w-full max-w-[1900px] mx-auto px-[5vw] items-center">
         <div
           className="w-full relative z-40 cursor-pointer"
           onClick={() => router.push('/')}
@@ -21,14 +21,14 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="lg:grid grid-cols-5 gap-2 items-end  hidden justify-between w-full ">
+        <div className="lg:flex gap-12 items-end  hidden justify-between">
           <Link href="/">
             <a
               className={`${
                 router.pathname === '/'
                   ? ' underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
-              } text-normal flex-initial w-4`}
+              } text-normal flex-initial w-full text-center`}
             >
               Inicio
             </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 router.pathname === '/seguros'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
-              } text-normal  w-4`}
+              } text-normal w-full text-center`}
             >
               Artistas
             </button>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 router.pathname === '/asesorias'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
-              } text-normal  w-4`}
+              } text-normal w-full text-center`}
             >
               Programacion
             </button>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 router.pathname === '/nosotros'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
-              } text-normal w-4`}
+              } text-normal w-full text-center`}
             >
               Nosotros
             </button>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 router.pathname === '/contacto'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
-              } text-normal w-4`}
+              } text-normal w-full text-center`}
             >
               Contacto
             </button>
