@@ -7,7 +7,7 @@ function CountdownTimer() {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    const targetDate: any = new Date('2024-08-31T23:59:59') // Fecha objetivo
+    const targetDate: any = new Date('2024-09-10T23:59:59') // Fecha objetivo
     const intervalId = setInterval(() => {
       const now: any = new Date()
       const difference = targetDate - now
@@ -40,29 +40,29 @@ function CountdownTimer() {
   }, [])
 
   return (
-    <div className="flex items-end md:items-center justify-center w-full gap-6 count-down-main">
+    <div className="flex items-end md:items-center justify-center w-full gap-6 count-down-main text-redOmega">
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
         <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
-            <span style={{ "--value": days }}></span>
+          <span className="countdown font-mono text-7xl">
+            <span style={{ '--value': days }}></span>
           </span>
           Días
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
-            <span style={{ "--value": hours }}></span>
+          <span className="countdown font-mono text-7xl">
+            <span style={{ '--value': hours }}></span>
           </span>
           Horas
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
-            <span style={{ "--value": minutes }}></span>
+          <span className="countdown font-mono text-7xl">
+            <span style={{ '--value': minutes }}></span>
           </span>
           Min
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
-            <span style={{ "--value": seconds }}></span>
+          <span className="countdown font-mono text-7xl">
+            <span style={{ '--value': seconds }}></span>
           </span>
           Seg
         </div>
