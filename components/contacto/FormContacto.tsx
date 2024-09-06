@@ -59,7 +59,8 @@ const FormContacto = () => {
     telefono: '',
     numeroIntegrantes: '',
     redSocial: '',
-    reseña: ''
+    reseña: '',
+    genero: ''
   })
 
   const [sent, setSent] = useState<boolean>(false)
@@ -82,7 +83,7 @@ const FormContacto = () => {
     try {
       setLoading(true)
       const result = await axios.post(
-        'https://sheet.best/api/sheets/1cdc285b-7e4e-452e-b970-609a9aaad090',
+        'https://sheet.best/api/sheets/8cc01630-c505-4d95-973d-ca2dd243d91c',
         data
       )
 
@@ -112,28 +113,32 @@ const FormContacto = () => {
         onSubmit={handleSubmit}
       >
         <div className="w-full flex flex-col items-start lg:mx-auto md:w-full my-5 md:my-0 lg:max-w-[530px] md:px-5">
-          <div className="flex flex-col relative w-full px-8 md:px-0">
-            <h1 className="text-left font-bold md:pt-0 lg:pt-3 font-myriad mb-2 text-white">
-              Numero de integrantes
-            </h1>
-            <div className="flex flex-wrap">
-              <div className="w-full">
-                <input
-                  className="appearance-none block w-full  text-normal border border-greyOmega rounded-lg   py-2 px-3 leading-tight focus:outline-none "
-                  name="numeroIntegrantes"
-                  onChange={handleChange}
-                  type="text"
-                  required
-                />
+          {sent === false ? (
+            <div className="flex flex-col relative w-full px-8 md:px-0">
+              <h1 className="text-left font-bold md:pt-0 lg:pt-3 font-myriad mb-2 text-white">
+                Numero de integrantes
+              </h1>
+              <div className="flex flex-wrap">
+                <div className="w-full">
+                  <input
+                    className="appearance-none block w-full  text-normal border border-greyOmega rounded-lg   py-2 px-3 leading-tight focus:outline-none "
+                    name="numeroIntegrantes"
+                    onChange={handleChange}
+                    type="text"
+                    required
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            <div></div>
+          )}
           <div className="relative ">
             <div className="pt-8 md:pt-10 hidden lg:block xl:hidden ">
               <Image
                 src={contacto}
                 width={340}
-                height={229}
+                height={529}
                 layout="fixed"
                 className="rounded-3xl pt-5 static"
                 objectFit="cover"
@@ -183,8 +188,8 @@ const FormContacto = () => {
           <div className="flex flex-col w-full my-0 items-center">
             {sent ? (
               <h3 className="text-2xl font-bold text-redOmega w-full mx-10 py-20 text-center h-[100%] flex items-center">
-                Gracias por escribirnos, intentaremos responder lo antes
-                posible!
+                Te has incrito Exitosamente, nos contactaremos con tigo tan
+                pronto como podamos!
               </h3>
             ) : (
               <div className="w-full  px-5">
@@ -196,6 +201,18 @@ const FormContacto = () => {
                     <input
                       className="appearance-none block w-full  text-normal border border-greyOmega rounded-lg   py-2 px-3 leading-tight focus:outline-none "
                       name="banda"
+                      onChange={handleChange}
+                      type="text"
+                      required
+                    />
+                  </div>
+                </div>
+                <h1 className="font-bold mb-2 text-white">Genero musical</h1>
+                <div className="flex flex-wrap mb-6 md:my-1 lg:my-3">
+                  <div className="w-full">
+                    <input
+                      className="appearance-none block w-full  text-normal border border-greyOmega rounded-lg   py-2 px-3 leading-tight focus:outline-none "
+                      name="genero"
                       onChange={handleChange}
                       type="text"
                       required
@@ -322,7 +339,7 @@ const FormContacto = () => {
                     <PulseLoader color="#CC0000" />
                   ) : (
                     <button
-                      className="btn-primary mt-2 w-auto align-middle text-center my-4"
+                      className="btn-primary text-white mt-2 w-auto align-middle text-center my-4"
                       type="submit"
                     >
                       Enviar
