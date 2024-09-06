@@ -43,25 +43,25 @@ function CountdownTimer() {
     <div className="flex items-end md:items-center justify-center w-full gap-6 count-down-main text-redOmega">
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
         <div className="flex flex-col">
-          <span className="countdown font-mono text-7xl">
+          <span className="countdown font-mono text-[7vw]">
             <span style={{ '--value': days }}></span>
           </span>
           Días
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-7xl">
+          <span className="countdown font-mono text-[7vw]">
             <span style={{ '--value': hours }}></span>
           </span>
           Horas
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-7xl">
+          <span className="countdown font-mono text-[7vw]">
             <span style={{ '--value': minutes }}></span>
           </span>
           Min
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-7xl">
+          <span className="countdown font-mono text-[7vw]">
             <span style={{ '--value': seconds }}></span>
           </span>
           Seg
