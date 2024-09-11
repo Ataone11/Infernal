@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function CountdownTimer() {
   const [days, setDays] = useState(0)
@@ -38,31 +38,33 @@ function CountdownTimer() {
 
     return () => clearInterval(intervalId)
   }, [])
-
+  interface CustomCSSProperties extends React.CSSProperties {
+    '--value'?: number // Definir --value como cadena
+  }
   return (
     <div className="flex items-end md:items-center justify-center w-full gap-6 count-down-main text-redOmega">
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
         <div className="flex flex-col">
           <span className="countdown font-mono text-[7vw]">
-            <span style={{ '--value': days }}></span>
+            <span style={{ '--value': days } as CustomCSSProperties}></span>
           </span>
           <h1 className="md:text-4xl">Días</h1>
         </div>
         <div className="flex flex-col">
           <span className="countdown font-mono text-[7vw]">
-            <span style={{ '--value': hours }}></span>
+            <span style={{ '--value': hours } as CustomCSSProperties}></span>
           </span>
           <h1 className="md:text-4xl">Horas</h1>
         </div>
         <div className="flex flex-col">
           <span className="countdown font-mono text-[7vw]">
-            <span style={{ '--value': minutes }}></span>
+            <span style={{ '--value': minutes } as CustomCSSProperties}></span>
           </span>
           <h1 className="md:text-4xl">Min</h1>
         </div>
         <div className="flex flex-col">
           <span className="countdown font-mono text-[7vw]">
-            <span style={{ '--value': seconds }}></span>
+            <span style={{ '--value': seconds } as CustomCSSProperties}></span>
           </span>
           <h1 className="md:text-4xl">Seg</h1>
         </div>
