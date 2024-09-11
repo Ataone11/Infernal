@@ -1,5 +1,4 @@
 import FormContacto from '../components/contacto/FormContacto'
-import Ubicacion from '../components/Ubicacion'
 
 const Contacto = () => {
   return (

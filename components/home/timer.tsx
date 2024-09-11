@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState, CSSProperties } from 'react'
 
 function CountdownTimer() {
   const [days, setDays] = useState(0)
@@ -38,7 +38,7 @@ function CountdownTimer() {
 
     return () => clearInterval(intervalId)
   }, [])
-  interface CustomCSSProperties extends React.CSSProperties {
+  interface CustomCSSProperties extends CSSProperties {
     '--value'?: number // Definir --value como cadena
   }
   return (

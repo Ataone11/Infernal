@@ -1,57 +1,12 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import contacto from '../../assets/images/nosotros/infernalw.png'
-import iconVida from '../../assets/icons/vida.svg'
-import iconHouse from '../../assets/icons/hogar.svg'
-import iconPymes from '../../assets/icons/pymes.svg'
-import iconCar from '../../assets/icons/car.svg'
-import iconPlus from '../../assets/icons/plus.svg'
+
 import axios from 'axios'
 
 import { PulseLoader } from 'react-spinners'
 
-interface Props {
-  title?: string
-  icon: any | string
-  id: number
-}
-
-const dataSecure: Props[] = [
-  {
-    id: 1,
-    title: 'Vida',
-    icon: iconVida
-  },
-  {
-    id: 2,
-    title: 'Hogar',
-    icon: iconHouse
-  },
-  {
-    id: 3,
-    title: 'PYMES',
-    icon: iconPymes
-  },
-  // {
-  //   id: 4,
-  //   title: 'Estatales',
-  //   icon: iconBills
-  // },
-  {
-    id: 5,
-    title: 'Automovíles',
-    icon: iconCar
-  },
-  {
-    id: 6,
-    title: 'Otros',
-    icon: iconPlus
-  }
-]
-
 const FormContacto = () => {
-  const [servicios, setServicios] = useState(dataSecure[0])
-  const [descarga, setDescarga] = useState(false)
   const [data, setData] = useState<any>({
     banda: '',
     contacto: '',
@@ -65,7 +20,6 @@ const FormContacto = () => {
 
   const [sent, setSent] = useState<boolean>(false)
   const [error, setError] = useState<boolean>(false)
-  const [completeFields, setCompleteFields] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(false)
 
   const handleChange = (e: any) => {
@@ -288,53 +242,14 @@ const FormContacto = () => {
                 </div>
 
                 <div
-                  className={`${
-                    descarga === true
-                      ? 'transition-opacity   duration-300 ease-out opacity-100'
-                      : 'transition-opacity  duration-300 ease-in opacity-0'
-                  }   flex`}
-                >
-                  <button
-                    type="button"
-                    className="bg-redOmega hover:bg-redOmega  rounded-full py-1 px-3 text-white font-myriad w-[230px] h-[35px] align-middle text-center my-5"
-                  >
-                    <input
-                      className={`${
-                        descarga === true ? 'block' : 'hidden'
-                      }  flex justify-start items-center font-myriad font-bold transition-all  absolute w-[250px] align-middle text-center opacity-0 cursor-pointer`}
-                      type="file"
-                      name="files"
-                    />
-                    <h1 className="text-sm md:text-xs lg:text-xs xl:text-base">
-                      Subir documento
-                    </h1>
-                  </button>
-
-                  <label className="appearance-none w-[64%] text-normal border border-greyOmega rounded-lg   mx-4 my-5  leading-tight focus:outline-none h-[40px] p-2 flex justify-between ">
-                    <div className="overflow-auto">{data.archivo?.name}</div>
-                    <div className="text-right flex justify-end">
-                      <button type="button" className="text-greyOmega">
-                        X
-                      </button>
-                    </div>
-                  </label>
-                </div>
-
-                <div
-                  className={`${
-                    descarga === true ? 'translate-y-2' : '-translate-y-16'
-                  } relative flex justify-center md:justify-start items-center font-myriad font-bold transition-all ease-in duration-300 md:w-[40%] align-middle text-center`}
+                  className={` relative flex justify-center md:justify-start items-center font-myriad font-bold transition-all ease-in duration-300 md:w-[40%] align-middle text-center`}
                 >
                   {error && (
                     <span className="absolute bottom-[95%] text-xs text-redOmega">
                       Hubo un error, inténtelo de nuevo
                     </span>
                   )}
-                  {completeFields && (
-                    <span className="absolute bottom-[95%] text-xs text-redOmega">
-                      Por favor completa todos los campos
-                    </span>
-                  )}
+
                   {loading ? (
                     <PulseLoader color="#CC0000" />
                   ) : (

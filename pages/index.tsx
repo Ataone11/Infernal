@@ -6,7 +6,7 @@ import flayer from '../assets/images/gato.png'
 import proximo from '../assets/images/home/proximo.png'
 import CountdownTimer from '../components/home/timer'
 import fantasma from '../assets/images/fantama.png'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Slide } from 'react-awesome-reveal'
 const Home = ({ banners }: { banners: any[] }) => {
   return (
     <div className="bg-black w-full lg:min-h-[120vh] h-screen">

@@ -1,4 +1,3 @@
-import FormContacto from '../../components/contacto/FormContacto'
 import SeguroPersonas from '../../components/seguros/segurosPersonas'
 import SeguroEmpresas from '../../components/seguros/segurosEmpresas'
 import Otros from '../../components/seguros/otrosSeguros'
