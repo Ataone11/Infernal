@@ -5,9 +5,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href={'../assets/icons/gato.svg'} />
           <title>Infernal Fest</title>
-          <link rel="apple-touch-icon" href="/logo192.png" />
         </Head>
         <body>
           <Main />

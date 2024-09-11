@@ -12,7 +12,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
     >
       <div className="bg-white w-[80%] h-[70%] rounded-md flex flex-col items-center justify-center m-auto shadow-2xl">
         <Link href="/">
-          <a
+          <button
             onClick={() => setToggle(true)}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
               router.pathname === '/'
@@ -21,27 +21,29 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
             } text-normal`}
           >
             Inicio
-          </a>
+          </button>
         </Link>
         <hr className=" w-[90%]" />
 
         <Link href="/asesorias">
-          <a
+          <button
             onClick={() => setToggle(true)}
+            disabled={true}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
               router.pathname === '/asesorias'
                 ? 'text-redOmega'
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
           >
-            Programaciom
-          </a>
+            Programacion
+          </button>
         </Link>
         <hr className=" w-[90%]" />
 
         <Link href="/seguros">
-          <a
+          <button
             onClick={() => setToggle(true)}
+            disabled={true}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
               router.pathname === '/seguros'
                 ? 'text-redOmega'
@@ -49,7 +51,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
             } text-normal`}
           >
             Artistas
-          </a>
+          </button>
         </Link>
         <hr className=" w-[90%]" />
 
@@ -68,7 +70,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
         <hr className=" w-[90%]" />
 
         <Link href="/nosotros">
-          <a
+          <button
             onClick={() => setToggle(true)}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
               router.pathname === '/ayuda'
@@ -77,12 +79,12 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
             } text-normal`}
           >
             Nosotros
-          </a>
+          </button>
         </Link>
         <hr className=" w-[90%]" />
 
         <Link href="/contacto">
-          <a
+          <button
             onClick={() => setToggle(true)}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
               router.pathname === '/contacto'
@@ -91,7 +93,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
             } text-normal`}
           >
             Contacto
-          </a>
+          </button>
         </Link>
       </div>
     </div>
