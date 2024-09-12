@@ -1,8 +1,4 @@
 import Image from 'next/image'
-import Asesoria from '../../assets/images/asesorias/Asesorias1.png'
-import Asesoria2 from '../../assets/images/asesorias/Asesorias_Asesoria_2.jpg'
-import Asesoria3 from '../../assets/images/asesorias/Asesorias_Asesoria_3.jpg'
-import Asesoria4 from '../../assets/images/asesorias/Asesorias_Asesoria_4.jpg'
 import { useState } from 'react'
 import 'react-multi-carousel/lib/styles.css'
 import ScrollContainer from 'react-indiana-drag-scroll'
@@ -20,28 +16,28 @@ const dataSecure: Props[] = [
     title: 'Programas de seguros',
     description:
       'Te enseñamos todos los servicios que ofrecemos de la mano de nuestros aliados para que escojas cual se ajusta mas a tus necesidades y nos permitas ayudarte a suplirlas.',
-    image: Asesoria
+    image: '/asesorias/Asesorias1.png'
   },
   {
     id: 2,
     title: 'Reclamación de siniestros',
     description:
       'Te acompañamos en todo el proceso de tus reclamaciones y cumplimiento de tu seguro en el escenario de un siniestro automotriz',
-    image: Asesoria2
+    image: '/asesorias/Asesorias_Asesoria_2.jpg'
   },
   {
     id: 3,
     title: 'Contrataciones juridícas',
     description:
       'Presentamos, tramitamos y llevamos hasta su terminación las reclamaciones que se requieren ante las compañías aseguradoras, asesorando a nuestros clientes en caso de litigios o oonflictos por responsabilidad civil, derivados del programa de seguros.',
-    image: Asesoria3
+    image: '/asesorias/Asesorias_Asesoria_3.jpg'
   },
   {
     id: 4,
     title: 'Análisis de administración de riesgos',
     description:
       'Nos enfocamos en asesorar de forma integral a nuestros clientes brindando orientación jurídica, examinando y estructurando planes de seguros para la administración de riesgos.',
-    image: Asesoria4
+    image: '/asesorias/Asesorias_Asesoria_4.jpg'
   }
 ]
 

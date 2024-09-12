@@ -1,5 +1,3 @@
-import seguro1 from '../../assets/images/seguros/Seguros_Empresas_PYMES.jpg'
-import seguro2 from '../../assets/images/seguros/Seguros_Empresas_Estatales.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -39,7 +37,7 @@ const Empresas = () => {
         <br className="block lg:hidden" />
         <div
          className="container mx-auto flex flex-col">
-          <ImageShadow img={seguro1} />
+          <ImageShadow img={'/seguros/Seguros_Empresas_PYMES.jpg'} />
           <h1 className="text-2xl text-greyOmega my-10 font-myriad font-bold tracking-widest text-center hidden lg:block lg:my-6">
             SEGUROS PARA PYMES
           </h1>
@@ -55,7 +53,7 @@ const Empresas = () => {
           </div>
         </div>
         <div className="container mx-auto flex flex-col">
-          <ImageShadow img={seguro2} />
+          <ImageShadow img={'/seguros/Seguros_Empresas_Estatales.jpg'} />
           <h1 className="text-2xl text-greyOmega my-10 font-myriad font-bold tracking-widest text-center hidden lg:block lg:my-6">
             SEGUROS ESTATALES
           </h1>

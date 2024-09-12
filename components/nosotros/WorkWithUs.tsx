@@ -1,10 +1,8 @@
-import axios from 'axios'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import Image from 'next/image'
 import { FC, useState } from 'react'
 import { PulseLoader } from 'react-spinners'
 import imageForm from '../../assets/images/nosotros/Nosotros_Formulario.png'
-import { API_URL } from '../../utils/constants'
 
 const WorkWithUs: FC<any> = () => {
   const [submitted, setSubmitted] = useState(false)
@@ -67,7 +65,7 @@ const WorkWithUs: FC<any> = () => {
               formData.append(key, valores[key])
             })
             setLoading(true)
-            await axios.post(`${API_URL}/api/correo/trabaja`, formData)
+            // await axios.post(`${API_URL}/api/correo/trabaja`, formData)
             setLoading(false)
             resetForm()
             setSubmitted(true)

@@ -28,7 +28,7 @@ const Banner = ({ banner }: any) => {
   
   return (
     <>
-      {banner.map((item: any, index: number) => (
+      {banner?.map((item: any, index: number) => (
         <div key={item.id}>
           {index === position && (
             <div className='w-full mx-auto h-full flex flex-col md:flex-row-reverse pt-10 md:pb-10 md:justify-center md:items-center gap'>

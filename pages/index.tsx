@@ -1,6 +1,4 @@
-import axios from 'axios'
 import Banner from '../components/home/Banner'
-import { API_URL, QUERY_IMAGE } from '../utils/constants'
 import Image from 'next/image'
 import flayer from '../assets/images/gato.png'
 import proximo from '../assets/images/home/proximo.png'
@@ -62,16 +60,16 @@ const Home = ({ banners }: { banners: any[] }) => {
 
 export default Home
 
-export const getStaticProps = async () => {
-  let banners
-  try {
-    banners = await axios.get(`${API_URL}/api/banners${QUERY_IMAGE}`)
-  } catch (error) {
-    console.log(error)
-  }
-  return {
-    props: {
-      banners: banners ? banners.data.data : []
-    }
-  }
-}
+// export const getStaticProps = async () => {
+//   let banners
+//   try {
+//     banners = await axios.get(`${API_URL}/api/banners${QUERY_IMAGE}`)
+//   } catch (error) {
+//     console.log(error)
+//   }
+//   return {
+//     props: {
+//       banners: banners ? banners.data.data : []
+//     }
+//   }
+// }
