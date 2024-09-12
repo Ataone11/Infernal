@@ -1,10 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import estatales from '../../assets/images/seguros/Seguros_Empresas_Estatales.jpg'
-import Hogar from '../../assets/images/seguros/Seguros_Detalle_Estatales.jpg'
-import auto from '../../assets/images/seguros/Seguros_Detalle_Estatales_Programa.jpg'
-import pymes from '../../assets/images/seguros/Seguros_Detalle_Estatales_Vida.jpg'
-import personaje from '../../assets/images/seguros/Seguros_Personaje.png'
 
 const detalle = () => {
   return (
@@ -34,7 +29,7 @@ const detalle = () => {
             </Link>
             <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:left-0">
               <Image
-                src={estatales}
+                src={'/seguros/Seguros_Empresas_Estatales.jpg'}
                 width={335}
                 height={128}
                 className="rounded-2xl relative z-10  w-[95%] h-full shadow mr-auto"
@@ -76,7 +71,7 @@ const detalle = () => {
           <div className="relative container mx-auto hidden lg:block">
             <div className="relative mx-10 md:mx-0 flex md:justify-center after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-6 image-shadow after:self-end after:left-0">
               <Image
-                src={estatales}
+                src={'/seguros/Seguros_Empresas_Estatales.jpg'}
                 width={580}
                 height={321}
                 layout="fixed"
@@ -95,7 +90,7 @@ const detalle = () => {
         <div className="flex lg:grid lg:grid-cols-2 mx-auto lg:gap-x-[35px] container lg:px-10">
           <div className="container hidden lg:w-[90%] lg:mx-auto lg:flex items-center lg:self-center justify-center after:bg-gray-200 relative after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-6 image-shadow after:self-end after:left-0">
             <Image
-              src={Hogar}
+              src={'/seguros/Seguros_Detalle_Estatales.jpg'}
               width={555}
               height={306}
               layout="fixed"
@@ -135,7 +130,7 @@ const detalle = () => {
                   </div>
                   <div className="lg:flex hidden self-end">
                     <Image
-                      src={personaje}
+                      src={'/seguros/Seguros_Personaje.png'}
                       width={190}
                       height={221}
                       layout="fixed"
@@ -146,7 +141,7 @@ const detalle = () => {
                   </div>
                   <div className="lg:hidden flex flex-row-reverse">
                     <Image
-                      src={personaje}
+                      src={'/seguros/Seguros_Personaje.png'}
                       width={140}
                       height={141}
                       layout="fixed"
@@ -155,7 +150,7 @@ const detalle = () => {
                       objectPosition="center-bottom"
                     />
                     <Image
-                      src={Hogar}
+                      src={'/seguros/Seguros_Detalle_Estatales.jpg'}
                       width={180}
                       height={111}
                       layout="fixed"
@@ -174,7 +169,7 @@ const detalle = () => {
             <div className="bg-white rounded-xl shadow-xl m-auto w-[85%] sm:w-[400px] md:w-[70%] relative md:flex md:flex-col">
               <div className="relative w-full h-[180px]">
                 <Image
-                  src={auto}
+                  src={'/seguros/Seguros_Detalle_Estatales_Programa.jpg'}
                   alt=""
                   layout="fill"
                   className="rounded-t-lg md:rounded-r-xl"
@@ -214,7 +209,7 @@ const detalle = () => {
             <div className="bg-white rounded-xl shadow-xl m-auto w-[85%] sm:w-[400px] md:w-[70%] relative md:flex md:flex-col my-[25px] md:my-0">
               <div className="relative w-full h-[180px]">
                 <Image
-                  src={pymes}
+                  src={'/seguros/Seguros_Detalle_Estatales_Vida.jpg'}
                   alt=""
                   layout="fill"
                   className="rounded-t-lg md:rounded-r-xl"

@@ -1,6 +1,3 @@
-import seguro1 from '../../assets/images/seguros/banda1.webp'
-import seguro2 from '../../assets/images/seguros/bananos.jpg'
-import seguro3 from '../../assets/images/seguros/dc.webp'
 import Link from 'next/link'
 import Image from 'next/image'
 import FormContacto from '../contacto/FormContacto'
@@ -21,7 +18,7 @@ const Personas = () => {
       negrilla: 'En momentos difíciles mereces estar tranquilo.',
       description:
         'Este seguro te ayudara a no preocuparte por cuestiones económicas al momento de falleciiento de un ser querido.',
-      image: seguro1
+      image: '/seguros/banda1.webp'
     },
     {
       id: 2,
@@ -29,7 +26,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 3,
@@ -37,7 +34,7 @@ const Personas = () => {
       negrilla: 'Sabemos la importancia de la formación de tus hijos. ',
       description:
         'Asesórate con nosotros y descubre la manera mas efectiva para cubrir los costos de sus planes educativos',
-      image: seguro3
+      image: '/seguros/dc.webp'
     },
     {
       id: 2,
@@ -45,7 +42,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -53,7 +50,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -61,7 +58,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -69,7 +66,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -77,7 +74,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -85,7 +82,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -93,7 +90,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -101,7 +98,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     },
     {
       id: 2,
@@ -109,7 +106,7 @@ const Personas = () => {
       negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
       description:
         'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-      image: seguro2
+      image: '/seguros/bananos.jpg'
     }
   ]
   const ImageShadow = ({ img }: any) => (

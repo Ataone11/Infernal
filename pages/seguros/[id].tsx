@@ -1,24 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import seguro1 from '../../assets/images/seguros/Seguros_Personas_Vida.jpg'
-import vida from '../../assets/images/seguros/Seguros_Detalle_Vida.jpg'
-import Hogar from '../../assets/images/seguros/Seguros_Detalle_Hogar.jpg'
-import auto from '../../assets/images/seguros/Seguros_Detalle_Automoviles.jpg'
-import pymes from '../../assets/images/seguros/Seguros_Detalle_Pymes.jpg'
-import seguro2 from '../../assets/images/seguros/Seguros_Personas_Hogar.jpg'
-import seguro3 from '../../assets/images/seguros/Seguros_Personas_Automoviles.jpg'
-import personaje from '../../assets/images/seguros/Seguros_Personaje.png'
-import seguro4 from '../../assets/images/seguros/Seguros_Empresas_PYMES.jpg'
 import { useRouter } from 'next/router'
 
 interface Props {
   title?: string
   negrilla?: string
   description?: string
-  // eslint-disable-next-line no-undef
-  image?: StaticImageData | string
-  // eslint-disable-next-line no-undef
-  imageC: StaticImageData | string
+  image?: string
+  imageC: string
   titleC: string
   parrafo: string
   parrafo2: string
@@ -36,8 +25,8 @@ const dataSecure3: Props[] = [
     negrilla: ' Protege aquello que más te importa.',
     description:
       'Asegura el bienestar y futuro de tu familia, y atrévete a vivir plenamente.',
-    image: seguro1,
-    imageC: vida,
+    image: '/seguros/Seguros_Personas_Vida.jpg',
+    imageC: '/seguros/Seguros_Detalle_Vida.jpg',
     titleC: '¿CUANDO USAR ESTE SEGURO?',
     parrafo:
       'Si eres el principal proveedor de capital económico en tu familia, somos conscientes de que no quieres dejar a tus seres queridos sin un sustento en caso de que ya no te encuentres presente.',
@@ -54,8 +43,8 @@ const dataSecure3: Props[] = [
     negrilla: 'Sabemos el valor de tu esfuerzo.',
     description:
       'Te ayudamos a cuidar el hogaaque has construido y todos los elementos que hacen parte de él.',
-    image: seguro2,
-    imageC: Hogar,
+    image: '/seguros/Seguros_Personas_Hogar.jpg',
+    imageC: '/seguros/Seguros_Detalle_Hogar.jpg',
     titleC: '¿CUÁNDO USAR ESTE SEGURO?',
     parrafo:
       'Cualquier imprevisto puede tomar lugar sin dar previo aviso. Protege tu vivienda y los bienes que hay en ella de cualquier daño material producto de accidentes, catástrofes naturales, acciones terroristas o acciones malintencionadas de terceros.',
@@ -71,8 +60,8 @@ const dataSecure3: Props[] = [
     negrilla: 'Que nada te detenga en el camino. ',
     description:
       'Te ayudamos a que te aventures en cualquier travesía sin nungún limite.',
-    image: seguro3,
-    imageC: auto,
+    image: '/seguros/Seguros_Personas_Automoviles.jpg',
+    imageC: '/seguros/Seguros_Detalle_Automoviles.jpg',
     titleC: '¿CUÁNDO USAR ESTE SEGURO?',
     parrafo:
       'No basta con ser buen conductor, cualquier cosa puede suceder en la vía.',
@@ -89,8 +78,8 @@ const dataSecure3: Props[] = [
     negrilla: 'Queremos verte crecer. ',
     description:
       'Protegemos tu empresa, negocio y tus empleados. Encuentra con nosotros la opción que más se ajusta a tus necesidades.',
-    image: seguro4,
-    imageC: pymes,
+    image: '/seguros/Seguros_Empresas_PYMES.jpg',
+    imageC: '/seguros/Seguros_Detalle_Pymes.jpg',
     titleC: '¿CUÁNDO USAR ESTE SEGURO?',
     parrafo: 'Cada negocio es diferente y así mismo lo son sus necesidades.',
     parrafo2:
@@ -203,7 +192,7 @@ const detalle = () => {
                     </div>
                     <div className="lg:block hidden self-end">
                       <Image
-                        src={personaje}
+                        src={'/seguros/Seguros_Personaje.png'}
                         width={190}
                         height={221}
                         layout="fixed"
@@ -214,7 +203,7 @@ const detalle = () => {
                     </div>
                     <div className="lg:hidden flex flex-row-reverse pl-5">
                       <Image
-                        src={personaje}
+                        src={'/seguros/Seguros_Personaje.png'}
                         width={140}
                         height={141}
                         layout="fixed"

@@ -1,17 +1,12 @@
 import Image from 'next/image'
 import { Waypoint } from 'react-waypoint'
 import { useState, useEffect } from 'react'
-import photo1 from '../../assets/images/nosotros/infernal1.jpg'
-import photo2 from '../../assets/images/nosotros/infernal2.png'
-import photo3 from '../../assets/images/nosotros/infernal3.jpg'
-import photo4 from '../../assets/images/nosotros/infernal4.jpg'
 
 interface ITimeLineItem {
   id: number
   age: string
   description: string
-  // eslint-disable-next-line no-undef
-  image?: StaticImageData | any
+  image: string
 }
 
 const timeData: ITimeLineItem[] = [
@@ -20,28 +15,28 @@ const timeData: ITimeLineItem[] = [
     age: '2021',
     description:
       'Nuestro primer Festival En la casa villas de granada, una cosa excepcional en donde hasta calleron los aliens para poguear ',
-    image: photo1
+    image: '/nosotros/infernal1.jpg'
   },
   {
     id: 2,
     age: '2021',
     description:
       'Nuestra segunda edicion del Festival el cual se hizo en lo alto de la ciudad en el barrio egipto donde se punkeo toda la noche',
-    image: photo2
+    image: '/nosotros/infernal2.jpg'
   },
   {
     id: 3,
     age: '2023',
     description:
       'Nuestra ultima edicion donde la hicimos en el acueducto de la 68 con 80, estuvo de locos y hubo muchos zombies borrachines por la calles',
-    image: photo3
+    image: '/nosotros/infernal3.jpg'
   },
   {
     id: 8,
     age: '2024',
     description:
       'Nuestra proxima edicion en desarrollo este año y probablemente la ams grande, esperemos que los muertos vivos no se coman al publico este año',
-    image: photo4
+    image: '/nosotros/infernal1.jpg'
   }
 ]
 const TimeLine = () => {

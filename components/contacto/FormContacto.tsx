@@ -55,7 +55,7 @@ const FormContacto = () => {
   }
 
   return (
-    <div className="sm:mx-3 min-h-full">
+    <div className="sm:mx-3 min-h-fit">
       <div className="w-full h-full flex justify-center">
         <h2 className="text-redOmega text-2xl md:text-3xl lg:text-4xl font-bold font-myriad w-[65%] md:w-full lg:w-[80%] text-center  tracking-widest md:my-7">
           Convocatoria abierta
@@ -138,7 +138,7 @@ const FormContacto = () => {
           </div>
         </div>
 
-        <div className="sm:mx-3 min-h-full">
+        <div className="sm:mx-3 min-h-fit">
           <div className="flex flex-col w-full my-0 items-center">
             {sent ? (
               <h3 className="text-2xl font-bold text-redOmega w-full mx-10 py-20 text-center h-[100%] flex items-center">

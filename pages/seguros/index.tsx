@@ -1,12 +1,6 @@
 import SeguroPersonas from '../../components/seguros/segurosPersonas'
 import SeguroEmpresas from '../../components/seguros/segurosEmpresas'
 import Otros from '../../components/seguros/otrosSeguros'
-import segurosAccidentes from '../../assets/images/seguros/Seguros_Otros_Accidentes.jpg'
-import segurosBicicletas from '../../assets/images/seguros/Seguros_Otros_Bicicletas.jpg'
-import segurosEducacion from '../../assets/images/seguros/Seguros_Otros_Educacion.jpg'
-import segurosMascotas from '../../assets/images/seguros/Seguros_Otros_Mascotas.jpg'
-import segurosExequias from '../../assets/images/seguros/Seguros_Otros_Exequias.jpg'
-import segurosViales from '../../assets/images/seguros/Seguros_Otros_Viajes.jpg'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
@@ -25,7 +19,7 @@ const dataSecure3: Props[] = [
     negrilla: 'En momentos difíciles mereces estar tranquilo.',
     description:
       'Este seguro te ayudara a no preocuparte por cuestiones económicas al momento de falleciiento de un ser querido.',
-    image: segurosExequias
+    image: '/seguros/Seguros_Otros_Exequias.jpg'
   },
   {
     id: 2,
@@ -33,7 +27,7 @@ const dataSecure3: Props[] = [
     negrilla: 'Los accidentes pueden ocurrir en cualquier momento.',
     description:
       'El seguro de Accidentes te suministrará una ayuda económica, en caso de que un evento exterior te cause lesión física o la muerte',
-    image: segurosAccidentes
+    image: '/seguros/Seguros_Otros_Accidentes.jpg'
   },
   {
     id: 3,
@@ -41,7 +35,7 @@ const dataSecure3: Props[] = [
     negrilla: 'Sabemos la importancia de la formación de tus hijos. ',
     description:
       'Asesórate con nosotros y descubre la manera mas efectiva para cubrir los costos de sus planes educativos',
-    image: segurosEducacion
+    image: '/seguros/Seguros_Otros_Educacion.jpg'
   },
   {
     id: 4,
@@ -49,7 +43,7 @@ const dataSecure3: Props[] = [
     negrilla: 'Ellos también son parte de la familia.',
     description:
       'Te respaldamos satifaciendo tus necesidades y las de tus mascotas y te ayudamos a cuidarlos, atenderlos y protegerlos',
-    image: segurosMascotas
+    image: '/seguros/Seguros_Otros_Mascotas.jpg'
   },
   {
     id: 5,
@@ -57,7 +51,7 @@ const dataSecure3: Props[] = [
     negrilla: 'Tú eliges cómo moverte.',
     description:
       'Te acompañamos en caso de pérdida total por accidente o en caso de rono de tu bicicleta o patineta. para que tengas la libertad de desplazaese como quieres.',
-    image: segurosBicicletas
+    image: '/seguros/Seguros_Otros_Bicicletas.jpg'
   },
   {
     id: 6,
@@ -65,7 +59,7 @@ const dataSecure3: Props[] = [
     negrilla: 'No hay razon para viajar sin buena compañía. ',
     description:
       'Nuestro seguro cubre gastos de atención médica tanto en el extranjero como en territorio nacional, además de pérdida de equipaje y cancelación de viajes',
-    image: segurosViales
+    image: '/seguros/Seguros_Otros_Viajes.jpg'
   }
 ]
 

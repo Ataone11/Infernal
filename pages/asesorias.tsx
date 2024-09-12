@@ -1,11 +1,7 @@
 import Image from 'next/image'
 import CardOne from '../components/CardOne'
-import Asesoria1 from '../assets/images/asesorias/Asesorias_Paquete-de-seguros.jpg'
-import Formulario from '../assets/images/asesorias/Asesoria_Formulario.jpg'
 import Detalle from '../components/asesorias/DetalleAsesoria'
 import { useState } from 'react'
-import axios from 'axios'
-import { API_URL } from '../utils/constants'
 import { PulseLoader } from 'react-spinners'
 
 const asesorias = () => {
@@ -39,16 +35,18 @@ const asesorias = () => {
       })
       try {
         setLoading(true)
-        const result = await axios.post(
-          `${API_URL}/api/correo/asesoria`,
-          formData
-        )
+        // const result = await axios.post(
+        //   `${API_URL}/api/correo/asesoria`,
+        //   formData
+        // )
         setLoading(false)
-        if (result.status === 200) {
-          setSent(true)
-        } else {
-          setError(true)
-        }
+        // if (result.status === 200) {
+        //   setSent(true)
+        // } else {
+        //   setError(true)
+        // }
+        setSent(false)
+        setError(true)
       } catch (error) {
         console.log('error', error)
         setLoading(false)
@@ -76,7 +74,7 @@ const asesorias = () => {
         <div className="bg-gray-100 py-8 my-3 md:my-10">
           <div className="container mx-auto">
             <CardOne
-              image={Asesoria1}
+              image={'/asesorias/Asesorias_Paquete-de-seguros.jpg'}
               titleOne="ASESORÍA EN PAQUETES DE SEGUROS"
               description="Sabemos que puedes llegar a tener más de un aspecto de tu vida que necesita de la mejor protección, es por eso que te invitamos a que conozcas nuestros diferentes paquetes de seguros, para que no dejes ni un detalle a la deriva."
               button="Cotiza con nosotros"
@@ -96,7 +94,7 @@ const asesorias = () => {
         <div className="relative md:hidden">
           <div className=" relative  mx-10 md:mx-0 flex justify-center  md:hidden after:bg-gray-100 after:content-[''] after:absolute after:w-[90%] after:h-full after:rounded-3xl after:top-5 image-shadow after:self-end after:right-0">
             <Image
-              src={Formulario}
+              src={'/asesorias/Asesoria_Formulario.jpg'}
               width={380}
               height={201}
               layout="fixed"
@@ -145,7 +143,7 @@ const asesorias = () => {
             <div className="w-[500px] h-[270px] bg-gray-100 rounded-3xl  absolute -bottom-3 left-9 hidden  lg:block"></div>
             <div className=" relative  pt-8 md:pt-0 hidden lg:block ">
               <Image
-                src={Formulario}
+                src={'/asesorias/Asesoria_Formulario.jpg'}
                 width={500}
                 height={280}
                 layout="fixed"
@@ -159,7 +157,7 @@ const asesorias = () => {
             <div className="w-[320px] h-[180px] bg-gray-100 rounded-3xl  absolute -bottom-3 left-9 hidden  md:block lg:hidden"></div>
             <div className=" relative  pt-8 md:pt-0 hidden md:block lg:hidden">
               <Image
-                src={Formulario}
+                src={'/asesorias/Asesoria_Formulario.jpg'}
                 width={320}
                 height={180}
                 layout="fixed"
