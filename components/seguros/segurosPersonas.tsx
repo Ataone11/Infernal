@@ -109,15 +109,15 @@ const Personas = () => {
       image: '/seguros/bananos.jpg'
     }
   ]
-  const ImageShadow = ({ img }: any) => (
+  /*  const ImageShadow = ({ img }: any) => (
     <div className=" bg-black">
       <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-red-900 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:right-0">
         <Image
+          alt=""
           src={img}
           width={435}
           height={428}
           className="rounded-2xl relative z-10  w-[95%] h-full shadow mr-auto"
-          alt=""
           layout="fixed"
           objectFit="cover"
           objectPosition="90% 50%"
@@ -126,18 +126,18 @@ const Personas = () => {
 
       <div className="min-w-[250px] w-[460px] relative  hidden lg:block lg:pt-8 h-[80%] mx-auto after:bg-red-900 after:content-[''] after:absolute after:w-[90%] after:h-[80%] after:rounded-3xl after:top-16 image-shadow after:self-end after:right-0">
         <Image
+          alt=""
           src={img}
           width={335}
           height={250}
           className="rounded-3xl z-10 w-[80%] h-[50%] relative"
-          alt=""
           layout="fixed"
           objectFit="cover"
           objectPosition="50% 50%"
         />
       </div>
     </div>
-  )
+  ) */
   return (
     <div className="bg-black h-full w-full container mx-auto px-5">
       <div className="lg:grid lg:grid-cols-3 lg:justify-between my-5  md:grid md:grid-cols-2">
@@ -145,7 +145,7 @@ const Personas = () => {
         {dataSecure3.map((item: Props) => (
           <div key={item.id}>
             <div className="container mx-auto flex flex-col">
-              <ImageShadow img={item.image} />
+              <Image alt="" src={item.image} />
               <h1 className="text-2xl text-white my-10 font-myriad font-bold tracking-[4px] text-center hidden lg:block lg:my-6"></h1>
               <h1 className="text-2xl text-white my-10 lg:my-5 font-myriad font-bold text-center  ">
                 {item.title}

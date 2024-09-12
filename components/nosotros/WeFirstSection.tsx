@@ -6,6 +6,7 @@ const WeFirstSection = () => {
       <div className="max-w-full m-auto flex justify-center items-center xl:mx-0 my-10 xl:my-0 w-full">
         <div className="mx-2 relative w-[320px] sm:w-[330px] lg:w-[351px] xl:w-[586px] h-[192px] sm:h-[214px] lg:h-[236px] xl:h-[341px] before:absolute before:top-[-5%]  before:rounded-2xl before:left-[-5%] before:w-full before:h-full before:bg-redOmega2">
           <Image
+            alt=""
             src={'/nosotros/Nosotros.jpg'}
             layout="fill"
             objectFit="cover"

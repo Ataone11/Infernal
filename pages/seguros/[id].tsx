@@ -127,11 +127,11 @@ const detalle = () => {
                 </Link>
                 <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:right-0">
                   <Image
+                    alt=""
                     src={item.image}
                     width={335}
                     height={128}
                     className="rounded-2xl relative z-10  w-[95%] h-full shadow mr-auto"
-                    alt=""
                     layout="fixed"
                     objectFit="cover"
                     objectPosition="90% 50%"
@@ -152,6 +152,7 @@ const detalle = () => {
                 <div className="w-[519px] h-[281px] bg-gray-100 rounded-3xl  absolute  xl:top-16 xl:right-16"></div>
                 <div className=" relative  mx-10 md:mx-0 flex md:justify-center">
                   <Image
+                    alt=""
                     src={item.image}
                     width={580}
                     height={321}
@@ -168,6 +169,7 @@ const detalle = () => {
               <div className="mx-auto container lg:w-[90vw] lg:h-[550px] relative max-w-[1100px] py-5">
                 <div className="z-0 container hidden lg:block w-[55%] absolute lg:left-0 lg:top-0 full-image">
                   <Image
+                    alt=""
                     src={item.imageC}
                     width={555}
                     height={306}
@@ -192,6 +194,7 @@ const detalle = () => {
                     </div>
                     <div className="lg:block hidden self-end">
                       <Image
+                        alt=""
                         src={'/seguros/Seguros_Personaje.png'}
                         width={190}
                         height={221}
@@ -203,6 +206,7 @@ const detalle = () => {
                     </div>
                     <div className="lg:hidden flex flex-row-reverse pl-5">
                       <Image
+                        alt=""
                         src={'/seguros/Seguros_Personaje.png'}
                         width={140}
                         height={141}
@@ -212,6 +216,7 @@ const detalle = () => {
                         objectPosition="center-bottom"
                       />
                       <Image
+                        alt=""
                         src={item.image}
                         width={180}
                         height={111}

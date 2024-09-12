@@ -18,21 +18,20 @@ const Navbar = () => {
           onClick={() => router.push('/')}
         >
           <div className="relative w-[140px] h-[40px]">
-            <Image src={logoOmegaWhite} layout="fill" />
+            <Image alt="" src={logoOmegaWhite} layout="fill" />
           </div>
         </div>
 
         <div className="lg:flex gap-12 items-end  hidden justify-between">
-          <Link href="/">
-            <a
-              className={`${
-                router.pathname === '/'
-                  ? ' underline underline-offset-8 font-semibold'
-                  : 'text-black font-semibold hover:text-white transition-colors'
-              } text-normal flex-initial w-full text-center`}
-            >
-              Inicio
-            </a>
+          <Link
+            className={`${
+              router.pathname === '/'
+                ? ' underline underline-offset-8 font-semibold'
+                : 'text-black font-semibold hover:text-white transition-colors'
+            } text-normal flex-initial w-full text-center`}
+            href="/"
+          >
+            Inicio
           </Link>
           <Link href="/seguros">
             <button
@@ -87,7 +86,7 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
           className=" z-50 relative flex lg:hidden p-3 cursor-pointer hover:shadow-md transition-all duration-300 hover:shadow-redOmega/60 justify-center items-center rounded-full bg-redOmega"
         >
-          <Image src={menu} alt="menu" />
+          <Image alt="menu" src={menu} />
         </div>
         <MenuMobile toggle={toggle} setToggle={setToggle} />
       </div>

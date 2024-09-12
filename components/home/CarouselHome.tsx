@@ -12,13 +12,14 @@ import aseguradora9 from '../../assets/images/home/Inicio_Aseguradora_9.png'
 import aseguradora10 from '../../assets/images/home/Inicio_Aseguradora_10.png'
 import aseguradora11 from '../../assets/images/home/Inicio_Aseguradora_11.png'
 import CardCarouselHome from './CardCarouselHome'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 interface IData {
   id: number
   title: string
   description: string
   // eslint-disable-next-line no-undef
-  icon: any | StaticImageData
+  icon: any | StaticImport
 }
 
 const dataInsures: IData[] = [
@@ -27,94 +28,94 @@ const dataInsures: IData[] = [
     title: 'Seguros Confianza',
     description:
       'Respaldo ante cualquier eventualidad para tu empresa y colaboradores',
-    icon: aseguradora1,
+    icon: aseguradora1
   },
   {
     id: 2,
     title: 'Aseguradora Solidaria',
     description: 'Protegemos tu patrimonio',
-    icon: aseguradora2,
+    icon: aseguradora2
   },
   {
     id: 3,
     title: 'Continental',
     description:
       'Contamos con un amplio portafolio de servicios  de asistencias a nivel mundial',
-    icon: aseguradora3,
+    icon: aseguradora3
   },
   {
     id: 4,
     title: 'Sura',
     description: 'Lo que tu familia y empresa necesitan ',
-    icon: aseguradora4,
+    icon: aseguradora4
   },
   {
     id: 5,
     title: 'Previsora Seguros',
     description: 'Acompañamiento en todo el camino es lo que tu auto necesita',
-    icon: aseguradora5,
+    icon: aseguradora5
   },
   {
     id: 6,
     title: 'Nacional Seguros',
     description:
       'Especializados en soluciones para ramos de Cumplimiento y Responsabilidad Civil',
-    icon: aseguradora6,
+    icon: aseguradora6
   },
   {
     id: 7,
     title: 'Previsora Seguros',
     description:
       'Más de 50 productos en seguros generales, seguros de vida y riesgos laborales',
-    icon: aseguradora7,
+    icon: aseguradora7
   },
   {
     id: 8,
     title: 'Previsora Seguros',
     description:
       'Más de 50 productos en seguros generales, seguros de vida y riesgos laborales',
-    icon: aseguradora8,
+    icon: aseguradora8
   },
   {
     id: 9,
     title: 'Previsora Seguros',
     description:
       'Más de 50 productos en seguros generales, seguros de vida y riesgos laborales',
-    icon: aseguradora9,
+    icon: aseguradora9
   },
   {
     id: 10,
     title: 'Previsora Seguros',
     description:
       'Más de 50 productos en seguros generales, seguros de vida y riesgos laborales',
-    icon: aseguradora10,
+    icon: aseguradora10
   },
   {
     id: 11,
     title: 'Previsora Seguros',
     description:
       'Más de 50 productos en seguros generales, seguros de vida y riesgos laborales',
-    icon: aseguradora11,
-  },
+    icon: aseguradora11
+  }
 ]
 
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
-    items: 4,
+    items: 4
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },
-    items: 2,
+    items: 2
   },
   tablet: {
     breakpoint: { max: 768, min: 640 },
-    items: 2,
+    items: 2
   },
   mobile: {
     breakpoint: { max: 640, min: 300 },
-    items: 1,
-  },
+    items: 1
+  }
 }
 
 const customLeftArrow = (

@@ -14,8 +14,12 @@ const Carousel = ({ team }: any) => {
           >
             <div className="relative w-[155px] h-[156px] ">
               <Image
+                alt=""
                 layout="fill"
-                src={`${worker.attributes.foto.data.attributes.formats.small.url ?? worker.attributes.foto.data.attributes.url}`}
+                src={`${
+                  worker.attributes.foto.data.attributes.formats.small.url ??
+                  worker.attributes.foto.data.attributes.url
+                }`}
                 objectPosition="center"
                 objectFit="cover"
                 priority={true}

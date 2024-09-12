@@ -15,6 +15,7 @@ const Detalle = () => {
           <div className="w-[319px] h-[181px] bg-gray-100 rounded-3xl  absolute -bottom-3 right-10 md:hidden"></div>
           <div className=" relative  mx-10 md:mx-0 flex md:justify-center  md:hidden">
             <Image
+              alt=""
               src={seguro1}
               width={380}
               height={201}
@@ -40,6 +41,7 @@ const Detalle = () => {
           <div className="w-[319px] h-[181px] bg-gray-100 rounded-3xl  absolute -bottom-3 right-10 md:hidden"></div>
           <div className=" relative  mx-10 md:mx-0 flex md:justify-center  md:hidden">
             <Image
+              alt=""
               src={seguro1}
               width={380}
               height={201}
@@ -62,9 +64,7 @@ const Detalle = () => {
               name=""
               id=""
             >
-              <option value="Programas de seguros">
-                Programas de seguros
-              </option>
+              <option value="Programas de seguros">Programas de seguros</option>
               <option value="Reclamación de siniestros">
                 Reclamación de siniestros
               </option>
@@ -87,6 +87,7 @@ const Detalle = () => {
             <div className="w-[500px] h-[270px] bg-gray-100 rounded-3xl  absolute -bottom-3 left-9 hidden  lg:block"></div>
             <div className=" relative  pt-8 md:pt-0 hidden lg:block ">
               <Image
+                alt=""
                 src={seguro1}
                 width={500}
                 height={280}
@@ -101,6 +102,7 @@ const Detalle = () => {
             <div className="w-[320px] h-[180px] bg-gray-100 rounded-3xl  absolute -bottom-3 left-9 hidden  md:block lg:hidden"></div>
             <div className=" relative  pt-8 md:pt-0 hidden md:block lg:hidden">
               <Image
+                alt=""
                 src={seguro1}
                 width={320}
                 height={180}

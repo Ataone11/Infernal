@@ -90,6 +90,7 @@ const FormContacto = () => {
           <div className="relative ">
             <div className="pt-8 md:pt-10 hidden lg:block xl:hidden ">
               <Image
+                alt=""
                 src={contacto}
                 width={340}
                 height={529}
@@ -102,6 +103,7 @@ const FormContacto = () => {
 
             <div className="pt-5  hidden lg:hidden md:block">
               <Image
+                alt=""
                 src={contacto}
                 width={328}
                 height={519}
@@ -114,6 +116,7 @@ const FormContacto = () => {
 
             <div className="pt-8 md:pt-10 hidden lg:hidden xl:block 2xl:hidden">
               <Image
+                alt=""
                 src={contacto}
                 width={420}
                 height={519}
@@ -126,6 +129,7 @@ const FormContacto = () => {
 
             <div className="pt-8 hidden lg:hidden 2xl:block">
               <Image
+                alt=""
                 src={contacto}
                 width={478}
                 height={520}
@@ -142,7 +146,7 @@ const FormContacto = () => {
           <div className="flex flex-col w-full my-0 items-center">
             {sent ? (
               <h3 className="text-2xl font-bold text-redOmega w-full mx-10 py-20 text-center h-[100%] flex items-center">
-                Te has incrito Exitosamente, nos contactaremos con tigo tan
+                Te has inscrito Exitosamente, nos contactaremos contigo tan
                 pronto como podamos!
               </h3>
             ) : (

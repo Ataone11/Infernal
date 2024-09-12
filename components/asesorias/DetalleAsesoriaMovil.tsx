@@ -134,11 +134,11 @@ const DetalleM = () => {
                   <div className="relative block md:hidden lg:block">
                     <div className="flex justify-center lg:pt-8 h-[50%] after:bg-gray-100 after:content-[''] after:absolute after:w-[90%] after:h-full after:rounded-3xl after:top-16 image-shadow after:self-end after:-right-10">
                       <Image
+                        alt=""
                         src={item.image}
                         width={535}
                         height={328}
                         className="rounded-3xl  w-[80%] h-[50%] relative"
-                        alt=""
                         layout="fixed"
                         objectFit="cover"
                         objectPosition="50% 50%"

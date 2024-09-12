@@ -46,50 +46,50 @@ const Detalle = () => {
   return (
     <>
       <ScrollContainer className="flex md:hidden" vertical>
-          <button
-                onClick={() => setServicios(dataSecure[0])}
-                className={`${
-                  servicios.id === 1
-                    ? ' bg-redOmega border-redOmega text-white'
-                    : 'bg-white'
-                }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
+        <button
+          onClick={() => setServicios(dataSecure[0])}
+          className={`${
+            servicios.id === 1
+              ? ' bg-redOmega border-redOmega text-white'
+              : 'bg-white'
+          }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
             border-2 border-greyOmega text-greyOmega  py-2 whitespace-nowrap px-3 mx-4 h-[45px] snap-center w-fit`}
-              >
-                <h1 className="">Programas de seguros</h1>
-              </button>
-              <button
-                onClick={() => setServicios(dataSecure[1])}
-                className={`${
-                  servicios.id === 2
-                    ? ' bg-redOmega border-redOmega text-white'
-                    : 'bg-white'
-                }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
+        >
+          <h1 className="">Programas de seguros</h1>
+        </button>
+        <button
+          onClick={() => setServicios(dataSecure[1])}
+          className={`${
+            servicios.id === 2
+              ? ' bg-redOmega border-redOmega text-white'
+              : 'bg-white'
+          }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
           border-2 border-greyOmega text-greyOmega  py-2 whitespace-nowrap px-3 mx-4 h-[45px] w-fit`}
-              >
-                Reclamación de siniestros
-              </button>
-              <button
-                onClick={() => setServicios(dataSecure[2])}
-                className={`${
-                  servicios.id === 3
-                    ? ' bg-redOmega border-redOmega text-white'
-                    : 'bg-white'
-                }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
+        >
+          Reclamación de siniestros
+        </button>
+        <button
+          onClick={() => setServicios(dataSecure[2])}
+          className={`${
+            servicios.id === 3
+              ? ' bg-redOmega border-redOmega text-white'
+              : 'bg-white'
+          }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
           border-2 border-greyOmega text-greyOmega  py-2 whitespace-nowrap px-3 mx-4 h-[45px] w-fit`}
-              >
-                Contrataciones juridicas
-              </button>
-              <button
-                onClick={() => setServicios(dataSecure[3])}
-                className={`${
-                  servicios.id === 4
-                    ? ' bg-redOmega border-redOmega text-white'
-                    : 'bg-white'
-                }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
+        >
+          Contrataciones juridicas
+        </button>
+        <button
+          onClick={() => setServicios(dataSecure[3])}
+          className={`${
+            servicios.id === 4
+              ? ' bg-redOmega border-redOmega text-white'
+              : 'bg-white'
+          }  rounded-full md:rounded-full hover:bg-redOmega hover:text-white hover:border-redOmega font-semibold
             border-2 border-greyOmega text-greyOmega  py-2 whitespace-nowrap px-3 mx-4 h-[45px] w-fit`}
-              >
-                Análisis de administración de riesgos
-              </button>
+        >
+          Análisis de administración de riesgos
+        </button>
       </ScrollContainer>
       <div className="container mx-auto gap-3 space-y-4 md:py-3 lg:py-10 px-5 w-full">
         <div className="flx justify-center">
@@ -159,11 +159,11 @@ const Detalle = () => {
               <div className="relative block md:hidden lg:block">
                 <div className="flex justify-center lg:pt-8 h-[50%] after:bg-gray-100 after:content-[''] after:absolute after:w-[90%] after:h-[90%] after:rounded-3xl after:top-14 image-shadow after:self-end after:-left-3">
                   <Image
+                    alt=""
                     src={item.image}
                     width={535}
                     height={328}
                     className="rounded-3xl  w-[80%] h-[50%] relative z-10"
-                    alt=""
                     layout="fixed"
                     objectFit="cover"
                     objectPosition="50% 50%"
@@ -173,11 +173,11 @@ const Detalle = () => {
               <div className="relative hidden md:block lg:hidden my-10 md:my-0 lg:my-10">
                 <div className="flex justify-center xl:pt-8 h-[50%] after:bg-gray-100 after:content-[''] after:absolute after:w-[90%] after:h-[80%] after:rounded-3xl after:top-8 image-shadow after:self-end after:-right-2 ">
                   <Image
+                    alt=""
                     src={item.image}
                     width={535}
                     height={188}
                     className="rounded-3xl  w-[80%] h-[50%] relative z-10"
-                    alt=""
                     layout="fixed"
                     objectFit="cover"
                     objectPosition="50% 50%"

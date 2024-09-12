@@ -5,8 +5,8 @@ const CardOne = ({ image, titleOne, description }: any) => {
     <div className="bg-white rounded-xl shadow-xl m-auto w-[300px]  md:h-[350px] sm:w-[400px] md:w-full lg:w-[80%]  relative md:flex md:flex-row-reverse">
       <div className="relative w-full h-[180px] md:h-[350px] ">
         <Image
-          src={image}
           alt=""
+          src={image}
           layout="fill"
           className="rounded-t-lg md:rounded-r-xl"
           objectFit="cover"

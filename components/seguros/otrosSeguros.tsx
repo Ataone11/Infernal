@@ -5,8 +5,8 @@ const Otros = ({ image, titleOne, description, negrilla }: any) => {
     <div className="bg-white rounded-2xl shadow-xl m-auto h-[410px] sm:h-[400px] w-[310px] sm:w-[350px] my-5 ">
       <div className="relative w-full h-[160px] ">
         <Image
-          src={image}
           alt=""
+          src={image}
           layout="fill"
           className="rounded-t-2xl"
           objectFit="cover"

@@ -18,7 +18,7 @@ interface IData {
   title: string
   description: string
   // eslint-disable-next-line no-undef
-  icon: any | StaticImageData
+  icon: any
   url: string
 }
 
@@ -87,24 +87,21 @@ const dataInsures: IData[] = [
   {
     id: 9,
     title: 'Previsora Seguros',
-    description:
-      'Con productos especializados para tu empresa',
+    description: 'Con productos especializados para tu empresa',
     icon: aseguradora9,
     url: 'https://www.sbseguros.co/'
   },
   {
     id: 10,
     title: 'Previsora Seguros',
-    description:
-      'Respaldo a patrimonio y productos ',
+    description: 'Respaldo a patrimonio y productos ',
     icon: aseguradora10,
     url: 'https://www.segurosmundial.com.co/'
   },
   {
     id: 11,
     title: 'Previsora Seguros',
-    description:
-      'Bienestar, salud y prevención a tu disposición.',
+    description: 'Bienestar, salud y prevención a tu disposición.',
     icon: aseguradora11,
     url: 'https://www.axacolpatria.co/portal/'
   }
