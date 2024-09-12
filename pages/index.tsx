@@ -7,6 +7,7 @@ import proximo from '../assets/images/home/proximo.png'
 import CountdownTimer from '../components/home/timer'
 import fantasma from '../assets/images/fantama.png'
 import { Slide } from 'react-awesome-reveal'
+import Link from 'next/link'
 const Home = ({ banners }: { banners: any[] }) => {
   return (
     <div className="bg-black w-full lg:min-h-[120vh] h-screen">
@@ -16,7 +17,7 @@ const Home = ({ banners }: { banners: any[] }) => {
       <link rel="icon" href="../assets/images/icono.png" />
       <div className="bg-black h-full">
         <Slide direction="left" duration={1000} className="pl-[5vw] pt-[10vw]">
-          <div className="pl-[22vw] pt-[30vw] relative flex h-[5%] w-[2%]">
+          <div className="pl-[22vw] pt-[30vw] relative flex flex-col h-[5%] w-[2%]">
             <Image
               src={flayer}
               layout="fill"
@@ -39,9 +40,14 @@ const Home = ({ banners }: { banners: any[] }) => {
         <div className="flex md:my-12"></div>
         <Slide
           direction="up"
-          className="absolute lg:-bottom-[12vw] lg:pt-0 pt-[15vh]  flex w-full justify-center"
+          className="absolute lg:-bottom-[12vw] lg:pt-0 pt-[5vh] md:pt-[15vh]  flex w-full justify-center"
         >
-          <div className="relative h-full flex align-bottom items-end mx-auto z-20">
+          <div className="relative h-full flex align-bottom items-end mx-auto z-20 flex-col pt-10 lg:pt-0">
+            <Link href="/contacto">
+              <a className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
+                CONVOCATORIA ABIERTA {'➤'}
+              </a>
+            </Link>
             <CountdownTimer />
           </div>
         </Slide>

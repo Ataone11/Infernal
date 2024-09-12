@@ -25,7 +25,6 @@
     "react-player": "^2.9.0",
     "react-spinners": "^0.11.0",
     "react-timer-hook": "^3.0.7",
-    "react-toastify": "^10.0.5",
     "react-waypoint": "^10.1.0",
     "sass": "^1.49.0"
   },
