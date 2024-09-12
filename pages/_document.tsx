@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href={'../assets/icons/gato.svg'} />
+          <link rel="icon" href="gato.svg" />
           <title>Infernal Fest</title>
         </Head>
         <body>
