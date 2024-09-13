@@ -9,9 +9,9 @@ const WorkWithUs: FC<any> = () => {
   const [loading, setLoading] = useState<boolean>(false)
 
   return (
-    <div className="container mx-auto w-full mb-10 lg:pt-20 space-y-8 mt-4">
+    <div className="container mx-auto w-full mb-10 pt-20 lg:pt-20 space-y-8 mt-4">
       <h3 className="mx-4 text-redOmega text-large lg:text-extraLarge font-bold tracking-[0.2em] uppercase text-center">
-        Trabaja con nosotros
+        Unete a nuestra comunidad
       </h3>
       <div className="space-y-9 flex flex-col items-center lg:flex-row lg:justify-between max-w-[1100px] m-auto">
         <div className="relative w-[80%] h-[200px] mx-8 md:w-1/2 xl:w-[524px] lg:h-[300px] xl:h-[322px] before:mx-auto before:absolute before:bottom-[-9%]  before:rounded-2xl before:right-[-5%] before:w-[50%] before:h-full before:bg-black">

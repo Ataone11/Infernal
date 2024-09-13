@@ -6,9 +6,17 @@ const WeValues = () => {
           Punk & Roll Bby
         </h3>
         <p className="text-center  text-white text-extraSmall sm:text-small md:text-[16px]">
-          Nos gusta apoyar a la escena de punk local de bogota sin embargo nos
-          gusta brindarle la oportunidad a artistas que tambien vivan fuera de
-          la ciudad para que ellos tembien reciban el apoyo y puedan venir.
+          Nos apasiona apoyar y promover la escena punk local de Bogotá, y
+          estamos comprometidos en proporcionar oportunidades a las bandas y
+          artistas de la ciudad. Sin embargo, nuestro objetivo va más allá de
+          las fronteras urbanas. Queremos extender nuestro apoyo a artistas que
+          residen fuera de Bogotá, dándoles la oportunidad de mostrar su talento
+          y participar en nuestro festival. Creemos que es fundamental ofrecer
+          un espacio inclusivo donde no solo los talentos locales, sino también
+          los de otras regiones, puedan recibir el reconocimiento que merecen.
+          Al hacerlo, enriquecemos nuestra oferta cultural y fortalecemos el
+          intercambio entre diferentes comunidades musicales, creando así un
+          evento más diverso y vibrante.
         </p>
       </div>
       <div className="mt-10 flex flex-col xl:flex-row gap-y-8 justify-center xl:items-start items-center"></div>
