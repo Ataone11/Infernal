@@ -8,7 +8,7 @@ import { Slide } from 'react-awesome-reveal'
 import Link from 'next/link'
 const Home = ({ banners }: { banners: any[] }) => {
   return (
-    <div className="bg-black w-full min-h-[120vh] h-screen">
+    <div className="bg-black w-full  min-h-screen lg:min-h-[120vh]">
       <div className=" w-11/12 m-auto container ">
         <Banner banner={banners} />
       </div>
@@ -28,15 +28,11 @@ const Home = ({ banners }: { banners: any[] }) => {
             <track kind="captions" />
           </video>
           <Image alt="" src={proximo} layout="fill" className="pt-10 z-30" />
-          <Slide
-            direction="left"
-            duration={1000}
-            className="pl-[5vw] pt-[10vw]"
-          >
-            <div className="lg:pl-[22vw] lg:pt-[30vw] relative flex flex-col h-[5%] w-[2%] z-20">
-              <Image alt="" src={flayer} layout="fill" objectFit="cover" />
-            </div>
-          </Slide>
+
+          <div className="lg:pl-[22vw] lg:pt-[30vw] relative flex flex-col h-[5%] w-[2%] z-20">
+            <Image alt="" src={flayer} layout="fill" objectFit="cover" />
+          </div>
+
           <div className="flex md:my-12"></div>
           <Slide
             direction="up"
