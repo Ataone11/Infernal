@@ -55,32 +55,19 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
         </Link>
         <hr className=" w-[90%]" />
 
-        <Link href="/nosotros">
-          <a
-            onClick={() => setToggle(true)}
-            className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
-              router.pathname === '/nosotros'
-                ? 'text-redOmega'
-                : 'text-blackOmega hover:text-redOmega transition-colors'
-            } text-normal`}
-          >
-            Nosotros
-          </a>
+        <Link
+          onClick={() => setToggle(true)}
+          className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
+            router.pathname === '/nosotros'
+              ? 'text-redOmega'
+              : 'text-blackOmega hover:text-redOmega transition-colors'
+          } text-normal`}
+          href="/nosotros"
+        >
+          Nosotros
         </Link>
         <hr className=" w-[90%]" />
 
-        <Link href="/nosotros">
-          <button
-            onClick={() => setToggle(true)}
-            className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
-              router.pathname === '/ayuda'
-                ? 'text-redOmega'
-                : 'text-blackOmega hover:text-redOmega transition-colors'
-            } text-normal`}
-          >
-            Nosotros
-          </button>
-        </Link>
         <hr className=" w-[90%]" />
 
         <Link href="/contacto">

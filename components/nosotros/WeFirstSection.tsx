@@ -6,6 +6,7 @@ const WeFirstSection = () => {
       <div className="max-w-full m-auto flex justify-center items-center xl:mx-0 my-10 xl:my-0 w-full">
         <div className="mx-2 relative w-[320px] sm:w-[330px] lg:w-[351px] xl:w-[586px] h-[192px] sm:h-[214px] lg:h-[236px] xl:h-[341px] before:absolute before:top-[-5%]  before:rounded-2xl before:left-[-5%] before:w-full before:h-full before:bg-redOmega2">
           <Image
+            alt=""
             src={'/nosotros/Nosotros.jpg'}
             layout="fill"
             objectFit="cover"
@@ -18,20 +19,25 @@ const WeFirstSection = () => {
           ¿Quienes somos?
         </h1>
         <p className="text-white text-small font-normal xl:text-[16px] text-justify leading-[22px]">
-          El Infernal Fest es un Festival anual de musica, que se lleva acabo en
-          la ciudad de bogota y se celebra en las fechas de octubre en Hallowen
-          y es un evento para todo publico.
+          El Infernal Fest es un festival anual de música que tiene lugar en
+          Bogotá durante el mes de octubre, coincidiendo con las celebraciones
+          de Halloween. Este evento está abierto a todo público y se destaca por
+          su ambiente inclusivo y festivo.
           <br />
           <br />
-          Somos un festival sin animo de lucro el cual buscamos apoyar y darle
-          la oportunidad a bandas emergentes de todos los generos para que
-          puedan dar a conocer su arte al publico local tambien es somos un
-          espacio donde todos pueden reunirce y escuchar buena musica, compartir
-          con su familia, comer dulces bailar o vender sus artesanias.
+          Como un festival sin ánimo de lucro, nuestro principal objetivo es
+          apoyar y ofrecer una plataforma a bandas emergentes de diversos
+          géneros, brindándoles la oportunidad de mostrar su talento y conectar
+          con el público local. Además, El Infernal Fest es un punto de
+          encuentro donde la comunidad puede disfrutar de buena música,
+          compartir momentos con amigos y familiares, degustar dulces, bailar y
+          explorar una variedad de artesanías locales.
           <br />
           <br />
-          Somos una comunidad punk rockanrolera que nos gusta crear estos
-          espacion para la misma comunidad.
+          Nos enorgullecemos de ser una comunidad punk rockanrolera que trabaja
+          para crear espacios únicos y significativos para todos. Nuestro
+          festival es una celebración de la creatividad, la diversidad y la
+          buena musica.
         </p>
       </div>
     </div>

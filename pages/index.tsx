@@ -16,13 +16,7 @@ const Home = ({ banners }: { banners: any[] }) => {
       <div className="bg-black h-full">
         
         <div className="mx-auto hidden  relative w-[300px] h-[750px] ">
-          <Image
-            src={fantasma}
-            layout="fill"
-            width={200}
-            height={100}
-            objectFit="cover"
-          />
+          <Image alt="" src={fantasma} layout="fill" objectFit="cover" />
         </div>
 
        
@@ -47,11 +41,13 @@ const Home = ({ banners }: { banners: any[] }) => {
           direction="up"
           className="absolute lg:-bottom-[12vw] lg:pt-0 pt-[5vh] md:pt-[15vh]  flex w-full justify-center"
         >
-          <div className="relative h-full flex align-bottom items-end mx-auto flex-col pt-10 lg:pt-0">
-            <Link href="/contacto">
-              <a className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
-                CONVOCATORIA ABIERTA {'➤'}
-              </a>
+          <div className="relative h-full flex align-bottom items-end mx-auto z-20 flex-col pt-10 lg:pt-0">
+            <Link
+              href="/contacto"
+            >
+              <div className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
+              CONVOCATORIA ABIERTA {'➤'}
+              </div>
             </Link>
             <CountdownTimer />
           </div>

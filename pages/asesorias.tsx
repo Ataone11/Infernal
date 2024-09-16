@@ -94,6 +94,7 @@ const asesorias = () => {
         <div className="relative md:hidden">
           <div className=" relative  mx-10 md:mx-0 flex justify-center  md:hidden after:bg-gray-100 after:content-[''] after:absolute after:w-[90%] after:h-full after:rounded-3xl after:top-5 image-shadow after:self-end after:right-0">
             <Image
+              alt=""
               src={'/asesorias/Asesoria_Formulario.jpg'}
               width={380}
               height={201}
@@ -143,6 +144,7 @@ const asesorias = () => {
             <div className="w-[500px] h-[270px] bg-gray-100 rounded-3xl  absolute -bottom-3 left-9 hidden  lg:block"></div>
             <div className=" relative  pt-8 md:pt-0 hidden lg:block ">
               <Image
+                alt=""
                 src={'/asesorias/Asesoria_Formulario.jpg'}
                 width={500}
                 height={280}
@@ -157,6 +159,7 @@ const asesorias = () => {
             <div className="w-[320px] h-[180px] bg-gray-100 rounded-3xl  absolute -bottom-3 left-9 hidden  md:block lg:hidden"></div>
             <div className=" relative  pt-8 md:pt-0 hidden md:block lg:hidden">
               <Image
+                alt=""
                 src={'/asesorias/Asesoria_Formulario.jpg'}
                 width={320}
                 height={180}

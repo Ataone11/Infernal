@@ -29,11 +29,11 @@ const detalle = () => {
             </Link>
             <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:left-0">
               <Image
+                alt=""
                 src={'/seguros/Seguros_Empresas_Estatales.jpg'}
                 width={335}
                 height={128}
                 className="rounded-2xl relative z-10  w-[95%] h-full shadow mr-auto"
-                alt=""
                 layout="fixed"
                 objectFit="cover"
                 objectPosition="90% 50%"
@@ -57,7 +57,7 @@ const detalle = () => {
           </div>
           {/*  */}
           {/* <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:left-0">
-              <Image
+              <Image alt=""
                 src={estatales}
                 width={335}
                 height={128}
@@ -71,6 +71,7 @@ const detalle = () => {
           <div className="relative container mx-auto hidden lg:block">
             <div className="relative mx-10 md:mx-0 flex md:justify-center after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-6 image-shadow after:self-end after:left-0">
               <Image
+                alt=""
                 src={'/seguros/Seguros_Empresas_Estatales.jpg'}
                 width={580}
                 height={321}
@@ -90,6 +91,7 @@ const detalle = () => {
         <div className="flex lg:grid lg:grid-cols-2 mx-auto lg:gap-x-[35px] container lg:px-10">
           <div className="container hidden lg:w-[90%] lg:mx-auto lg:flex items-center lg:self-center justify-center after:bg-gray-200 relative after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-6 image-shadow after:self-end after:left-0">
             <Image
+              alt=""
               src={'/seguros/Seguros_Detalle_Estatales.jpg'}
               width={555}
               height={306}
@@ -130,6 +132,7 @@ const detalle = () => {
                   </div>
                   <div className="lg:flex hidden self-end">
                     <Image
+                      alt=""
                       src={'/seguros/Seguros_Personaje.png'}
                       width={190}
                       height={221}
@@ -141,6 +144,7 @@ const detalle = () => {
                   </div>
                   <div className="lg:hidden flex flex-row-reverse">
                     <Image
+                      alt=""
                       src={'/seguros/Seguros_Personaje.png'}
                       width={140}
                       height={141}
@@ -150,6 +154,7 @@ const detalle = () => {
                       objectPosition="center-bottom"
                     />
                     <Image
+                      alt=""
                       src={'/seguros/Seguros_Detalle_Estatales.jpg'}
                       width={180}
                       height={111}
@@ -169,8 +174,8 @@ const detalle = () => {
             <div className="bg-white rounded-xl shadow-xl m-auto w-[85%] sm:w-[400px] md:w-[70%] relative md:flex md:flex-col">
               <div className="relative w-full h-[180px]">
                 <Image
-                  src={'/seguros/Seguros_Detalle_Estatales_Programa.jpg'}
                   alt=""
+                  src={'/seguros/Seguros_Detalle_Estatales_Programa.jpg'}
                   layout="fill"
                   className="rounded-t-lg md:rounded-r-xl"
                   objectFit="cover"
@@ -209,8 +214,8 @@ const detalle = () => {
             <div className="bg-white rounded-xl shadow-xl m-auto w-[85%] sm:w-[400px] md:w-[70%] relative md:flex md:flex-col my-[25px] md:my-0">
               <div className="relative w-full h-[180px]">
                 <Image
-                  src={'/seguros/Seguros_Detalle_Estatales_Vida.jpg'}
                   alt=""
+                  src={'/seguros/Seguros_Detalle_Estatales_Vida.jpg'}
                   layout="fill"
                   className="rounded-t-lg md:rounded-r-xl"
                   objectFit="cover"

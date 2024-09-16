@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-[1550px] mx-auto w-full relative flex flex-col sm:flex-row space-y-3 justify-center sm:justify-between items-center py-3">
         <div className="flex flex-col justify-center items-center lg:justify-start md:items-start">
           <div className="relative w-[200px] h-[60px] pr-10">
-            <Image src={logoOmegaWhite} layout="fill" />
+            <Image alt="" src={logoOmegaWhite} layout="fill" />
           </div>
           <div className="text-white hidden flex-col justify-center items-center md:justify-start md:items-start lg:flex">
             <a
@@ -37,10 +37,11 @@ const Footer = () => {
                 fill="white"
               />
             </svg>
-            <Link href="/contacto">
-              <a className="text-white text-center hover:underline transition-all duration-300">
-                Bogota D.C
-              </a>
+            <Link
+              className="text-white text-center hover:underline transition-all duration-300"
+              href="/contacto"
+            >
+              Bogota D.C
             </Link>
           </div>
           <div className="flex justify-center items-center gap-x-2">

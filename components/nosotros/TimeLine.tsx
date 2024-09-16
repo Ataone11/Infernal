@@ -99,6 +99,7 @@ const TimeLine = () => {
                   <div className="relative first:md:right-[-50%] shadow-md max-w-[190px] sm:max-w-[200px] lg:w-[300px] md:max-w-full md:rounded-xl rounded-xl flex flex-col lg:flex-row justify-center items-center mx-auto">
                     <div className="relative w-[190px] sm:[200px] h-[100px] md:w-[200px] lg:w-[250px] md:h-[147px]">
                       <Image
+                        alt=""
                         src={item.image}
                         layout="fill"
                         objectFit="cover"

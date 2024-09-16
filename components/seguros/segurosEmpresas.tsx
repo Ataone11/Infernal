@@ -2,15 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const Empresas = () => {
-  const ImageShadow = ({ img }: any) => (
+  /* const ImageShadow = ({ img }: any) => (
     <div>
       <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-gray-200 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:right-0">
         <Image
+          alt=""
           src={img}
           width={335}
           height={128}
           className="rounded-2xl relative z-10  w-[95%] h-full shadow mr-auto"
-          alt=""
           layout="fixed"
           objectFit="cover"
           objectPosition="90% 50%"
@@ -19,25 +19,24 @@ const Empresas = () => {
 
       <div className="min-w-[250px] w-[360px] relative  hidden lg:block lg:pt-8 h-[80%] mx-auto after:bg-gray-200 after:content-[''] after:absolute after:w-[90%] after:h-full after:rounded-3xl after:top-16 image-shadow after:self-end after:right-0">
         <Image
+          alt=""
           src={img}
           width={335}
           height={228}
           className="rounded-3xl z-10 w-[80%] h-[50%] relative"
-          alt=""
           layout="fixed"
           objectFit="cover"
           objectPosition="50% 50%"
         />
       </div>
     </div>
-  )
+  ) */
   return (
     <div className="bg-white h-full w-full lg:w-[60%] container mx-auto  px-5 ">
       <div className="md:flex md:justify-between my-5">
         <br className="block lg:hidden" />
-        <div
-         className="container mx-auto flex flex-col">
-          <ImageShadow img={'/seguros/Seguros_Empresas_PYMES.jpg'} />
+        <div className="container mx-auto flex flex-col">
+          <Image alt="" src={'/seguros/Seguros_Empresas_PYMES.jpg'} />
           <h1 className="text-2xl text-greyOmega my-10 font-myriad font-bold tracking-widest text-center hidden lg:block lg:my-6">
             SEGUROS PARA PYMES
           </h1>
@@ -53,7 +52,7 @@ const Empresas = () => {
           </div>
         </div>
         <div className="container mx-auto flex flex-col">
-          <ImageShadow img={'/seguros/Seguros_Empresas_Estatales.jpg'} />
+          <Image alt="" src={'/seguros/Seguros_Empresas_Estatales.jpg'} />
           <h1 className="text-2xl text-greyOmega my-10 font-myriad font-bold tracking-widest text-center hidden lg:block lg:my-6">
             SEGUROS ESTATALES
           </h1>
