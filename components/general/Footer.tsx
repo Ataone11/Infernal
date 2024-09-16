@@ -9,7 +9,7 @@ import TikTokIcon from '../../assets/icons/tiktokIcon.svg'
 const Footer = () => {
   return (
     <div className="bg-[#FE0E06] px-10  mt-auto">
-      <div className="max-w-[1550px] mx-auto w-full relative flex flex-col lg:flex-row space-y-3 justify-center lg:justify-between items-center py-3">
+      <div className="max-w-[1550px] mx-auto w-full relative flex flex-col sm:flex-row space-y-3 justify-center sm:justify-between items-center py-3">
         <div className="flex flex-col justify-center items-center lg:justify-start md:items-start">
           <div className="relative w-[200px] h-[60px] pr-10">
             <Image src={logoOmegaWhite} layout="fill" />

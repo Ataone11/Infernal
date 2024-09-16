@@ -8,23 +8,13 @@ import { Slide } from 'react-awesome-reveal'
 import Link from 'next/link'
 const Home = ({ banners }: { banners: any[] }) => {
   return (
-    <div className="bg-black w-full lg:min-h-[120vh] h-screen">
+    <div className="bg-black w-full md:min-h-[120vh] h-screen">
       <div className=" w-11/12 m-auto container ">
         <Banner banner={banners} />
       </div>
       <link rel="icon" href="../assets/images/icono.png" />
       <div className="bg-black h-full">
-        <Slide direction="left" duration={1000} className="pl-[5vw] pt-[10vw]">
-          <div className="pl-[22vw] pt-[30vw] relative flex flex-col h-[5%] w-[2%]">
-            <Image
-              src={flayer}
-              layout="fill"
-              width={200}
-              height={100}
-              objectFit="cover"
-            />
-          </div>
-        </Slide>
+        
         <div className="mx-auto hidden  relative w-[300px] h-[750px] ">
           <Image
             src={fantasma}
@@ -35,12 +25,29 @@ const Home = ({ banners }: { banners: any[] }) => {
           />
         </div>
 
+       
+
+        <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw] top-14 z-10 ">
+        <video autoPlay loop src={'/videos/video.mp4'} className='lg:absolute lg:h-[90vh] lg:w-[100vw] top-[50px]'><track kind="captions" /></video>
+          <Image src={proximo} layout="fill" className="pt-10 z-30" />
+          <Slide direction="left" duration={1000} className="pl-[5vw] pt-[10vw]">
+          
+            <div className="lg:pl-[22vw] lg:pt-[30vw] relative flex flex-col h-[5%] w-[2%] z-20">
+            <Image
+              src={flayer}
+              layout="fill"
+              width={200}
+              height={100}
+              objectFit="cover"
+            />
+          </div>
+        </Slide>
         <div className="flex md:my-12"></div>
         <Slide
           direction="up"
           className="absolute lg:-bottom-[12vw] lg:pt-0 pt-[5vh] md:pt-[15vh]  flex w-full justify-center"
         >
-          <div className="relative h-full flex align-bottom items-end mx-auto z-20 flex-col pt-10 lg:pt-0">
+          <div className="relative h-full flex align-bottom items-end mx-auto flex-col pt-10 lg:pt-0">
             <Link href="/contacto">
               <a className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
                 CONVOCATORIA ABIERTA {'➤'}
@@ -49,9 +56,6 @@ const Home = ({ banners }: { banners: any[] }) => {
             <CountdownTimer />
           </div>
         </Slide>
-
-        <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw] top-14">
-          <Image src={proximo} layout="fill" className="pt-10" />
         </div>
       </div>
     </div>

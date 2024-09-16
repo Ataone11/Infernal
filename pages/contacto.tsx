@@ -2,7 +2,7 @@ import FormContacto from '../components/contacto/FormContacto'
 
 const Contacto = () => {
   return (
-    <div className="bg-black h-fit w-full  ">
+    <div className="bg-black h-screen w-full  ">
       <br />
       <FormContacto />
 
