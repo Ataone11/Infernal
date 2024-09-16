@@ -20,7 +20,7 @@ const Home = ({ banners }: { banners: any[] }) => {
 
         <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw] top-14 z-10 ">
           <video
-            autoPlay
+            autoPlay={true}
             loop
             src={'/videos/video.mp4'}
             className="lg:absolute lg:h-[90vh] lg:w-[100vw] top-[50px]"

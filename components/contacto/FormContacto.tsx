@@ -55,7 +55,7 @@ const FormContacto = () => {
   }
 
   return (
-    <div className="sm:mx-3 min-h-fit">
+    <div className="sm:mx-3 min-h-screen">
       <div className="w-full h-full flex justify-center">
         <h2 className="text-redOmega text-2xl md:text-3xl lg:text-4xl font-bold font-myriad w-[65%] md:w-full lg:w-[80%] text-center  tracking-widest md:my-7">
           Convocatoria abierta
