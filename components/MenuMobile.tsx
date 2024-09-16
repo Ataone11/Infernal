@@ -79,7 +79,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
           >
-            Contacto
+            Inscripcion  
           </button>
         </Link>
       </div>

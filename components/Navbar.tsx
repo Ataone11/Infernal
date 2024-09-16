@@ -16,7 +16,7 @@ const Navbar = () => {
         <div
           className="w-full relative z-40 cursor-pointer"
           onClick={() => router.push('/')}
-        >
+        >  
           <div className="relative w-[140px] h-[40px]">
             <Image alt="" src={logoOmegaWhite} layout="fill" />
           </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
                   : 'text-black font-semibold hover:text-white transition-colors'
               } text-normal w-full text-center`}
             >
-              Contacto
+              Inscripcion
             </button>
           </Link>
         </div>
