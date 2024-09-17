@@ -6,9 +6,10 @@ import CountdownTimer from '../components/home/timer'
 import fantasma from '../assets/images/fantama.png'
 import { Slide } from 'react-awesome-reveal'
 import Link from 'next/link'
+
 const Home = ({ banners }: { banners: any[] }) => {
   return (
-    <div className="bg-black w-full  min-h-screen lg:min-h-[120vh]">
+    <div className="bg-black w-full  min-h-screen lg:min-h-[180vh]">
       <div className=" w-11/12 m-auto container ">
         <Banner banner={banners} />
       </div>
@@ -18,10 +19,11 @@ const Home = ({ banners }: { banners: any[] }) => {
           <Image alt="" src={fantasma} layout="fill" objectFit="cover" />
         </div>
 
-        <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw] top-14 z-10 ">
+        <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw]  top-14 z-10 ">
           <video
             autoPlay={true}
             loop
+            preload="auto"
             src={'/videos/video.mp4'}
             className="lg:absolute lg:h-[90vh] lg:w-[100vw] top-[50px]"
           >
@@ -36,15 +38,46 @@ const Home = ({ banners }: { banners: any[] }) => {
           <div className="flex md:my-12"></div>
           <Slide
             direction="up"
-            className="absolute lg:-bottom-[12vw] pt-0 flex w-full justify-center"
+            className="absolute lg:-bottom-[30vw] xl:-bottom-[30vw] pt-10 flex w-full justify-center"
           >
-            <div className="relative h-full  j align-bottom items-end mx-auto z-20 flex-col pt-10 lg:pt-0">
+            <div className="relative h-full  align-bottom items-end mx-auto z-20 flex-col  pt-10 lg:pt-0">
               <Link href="/contacto">
                 <div className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
                   CONVOCATORIA ABIERTA {'➤'}
                 </div>
               </Link>
               <CountdownTimer />
+              <label className=" text-redOmega2 text-3xl flex justify-center font-mono">
+                Requisitos
+              </label>
+              <div className="flex  flex-col  w-[400px] md:w-[600px]">
+                <div className="flex  flex-col text-left pl-14 lg:pl-32 my-3">
+                  <label className=" text-redOmega2 ">
+                    ●la agrupacion debe estar compuesta por almenos dos o mas
+                    miembros.
+                  </label>
+                  <label className=" text-redOmega2 ">
+                    ●Es necesario contar con al menos una red social donde se
+                    pueda visualizar la trayectoria de la banda
+                  </label>
+                  <label className=" text-redOmega2 ">
+                    ●Se requiere tener al menos 1 o 2 canciones grabadas.
+                  </label>
+                  <label className=" text-redOmega2 ">
+                    ●Seguir nuestra pagina de instagram y facebook
+                  </label>
+                  <label className=" text-redOmega2 ">
+                    ●Enviar 2 fotos grupales de los artistas.
+                  </label>
+                </div>
+                <label className=" text-redOmega2 flex justify-center text-center w-full my-5 lg:pl-10">
+                  Las bandas seleccionadas tendrán su espacio en el flyer del
+                  festival y aparecerán en el apartado de Artistas con su foto
+                  grupal y una breve reseña. Algunos de los requisitos se
+                  solicitarán a través de contacto por WhatsApp. El flyer será
+                  publicado cuando el contador llegue a cero.
+                </label>
+              </div>
             </div>
           </Slide>
         </div>
