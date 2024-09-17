@@ -4,7 +4,6 @@ import flayer from '../assets/images/gato.png'
 import proximo from '../assets/images/home/proximo.png'
 import CountdownTimer from '../components/home/timer'
 import fantasma from '../assets/images/fantama.png'
-import { Slide } from 'react-awesome-reveal'
 import Link from 'next/link'
 
 const Home = ({ banners }: { banners: any[] }) => {
@@ -36,10 +35,7 @@ const Home = ({ banners }: { banners: any[] }) => {
           </div>
 
           <div className="flex md:my-12"></div>
-          <Slide
-            direction="up"
-            className="absolute lg:-bottom-[30vw] xl:-bottom-[30vw] pt-10 flex w-full justify-center"
-          >
+          <div className="absolute lg:-bottom-[30vw] xl:-bottom-[30vw] pt-10 flex w-full justify-center">
             <div className="relative h-full  align-bottom items-end mx-auto z-20 flex-col  pt-10 lg:pt-0">
               <Link href="/contacto">
                 <div className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
@@ -50,7 +46,7 @@ const Home = ({ banners }: { banners: any[] }) => {
               <label className=" text-redOmega2 text-3xl flex justify-center font-mono">
                 Requisitos
               </label>
-              <div className="flex  flex-col  w-[400px] md:w-[600px]">
+              <div className="flex  flex-col  w-[380px] md:w-[600px]">
                 <div className="flex  flex-col text-left pl-14 lg:pl-32 my-3">
                   <label className=" text-redOmega2 ">
                     ●la agrupacion debe estar compuesta por almenos dos o mas
@@ -79,7 +75,7 @@ const Home = ({ banners }: { banners: any[] }) => {
                 </label>
               </div>
             </div>
-          </Slide>
+          </div>
         </div>
       </div>
     </div>
