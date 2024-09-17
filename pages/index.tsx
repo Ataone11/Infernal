@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Home = ({ banners }: { banners: any[] }) => {
   return (
-    <div className="bg-black w-full  min-h-screen lg:min-h-[180vh]">
+    <div className="bg-black w-full  min-h-[1000px] sm:min-h-screen lg:min-h-[180vh]">
       <div className=" w-11/12 m-auto container ">
         <Banner banner={banners} />
       </div>
