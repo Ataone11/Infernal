@@ -29,10 +29,10 @@ const Home = () => {
               <Image alt="" src={esteaño} layout="fixed" objectFit="cover" />
             </div>
             <Link
-              className={`  text-[#FE0E06] pt-3 hover:pt:0 font-bold text  text-xl w-[100px]   h-[55px] hover:w-[150px] duration-300 hover:flex hover:justify-center  mx-auto  bg-black rounded-full flex-initial text-center my-8`}
+              className={`  text-[#FE0E06] pt-3 hover:pt:0 font-bold text  text-xl w-[150px] md:w-[100px]   h-[55px] hover:w-[150px] duration-300 hover:flex hover:justify-center  mx-auto  bg-black rounded-full flex-initial text-center my-8`}
               href="/home"
             >
-              Requisitos
+              Coopeo!
             </Link>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Home = () => {
             className={` hidden text-[#FE0E06] pt-3 hover:pt:0 font-bold text  text-xl w-[150px]   h-[55px] hover:w-[150px] duration-300 hover:flex hover:justify-center  mx-auto  bg-black rounded-full flex-initial text-center my-8`}
             href="/home"
           >
-            Requisitos
+            Coopeo!
           </Link>
         </div>
       </div>
