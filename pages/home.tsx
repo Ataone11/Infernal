@@ -46,7 +46,7 @@ const Home = ({ banners }: { banners: any[] }) => {
               <label className=" text-redOmega2 text-3xl flex justify-center font-mono">
                 Requisitos
               </label>
-              <div className="flex  flex-col  w-[380px] md:w-[600px]">
+              <div className="flex  flex-col  w-[360px] md:w-[600px]">
                 <div className="flex  flex-col text-left pl-14 lg:pl-32 my-3">
                   <label className=" text-redOmega2 ">
                     ●la agrupacion debe estar compuesta por almenos dos o mas
