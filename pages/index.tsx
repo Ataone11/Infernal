@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <div className=" w-full min-h-[1000px] md:min-h-screen  ">
+    <div className=" w-full min-h-[800px] md:min-h-screen  ">
       <div className=" bg-[#FE0E06]  h-full">
         <div className="mx-auto hidden  relative w-[300px] h-[750px] ">
           <Image alt="" src={fantasma} layout="fill" objectFit="cover" />
