@@ -11,16 +11,16 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
       } transition-all duration-300 ease-in-out top-0 z-30 left-0  bg-white/40 `}
     >
       <div className="bg-white w-[80%] h-[70%] rounded-md flex flex-col items-center justify-center m-auto shadow-2xl">
-        <Link href="/">
+        <Link href="/home">
           <button
             onClick={() => setToggle(true)}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
-              router.pathname === '/'
+              router.pathname === '/home'
                 ? 'text-redOmega'
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
           >
-            Inicio
+            Home
           </button>
         </Link>
         <hr className=" w-[90%]" />
@@ -79,7 +79,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
           >
-            Inscripcion  
+            Inscripcion
           </button>
         </Link>
       </div>
