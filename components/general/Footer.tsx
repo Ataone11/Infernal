@@ -81,7 +81,7 @@ const Footer = () => {
                 fill="white"
               />
             </svg>
-            <span className="text-white">3115418442 - 3118418442</span>
+            <span className="text-white">3115418442 - 3114796708</span>
           </div>
         </div>
         <div className="flex gap-5 items-center">

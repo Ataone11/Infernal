@@ -11,12 +11,16 @@ const Navbar = () => {
   const router = useRouter()
 
   return (
-    <div className="bg-[#FE0E06] w-full py-2 sticky inset-0 m-auto shadow-lg flex px-5 z-[999]  items-center">
+    <div
+      className={`bg-[#FE0E06] w-full py-2 sticky inset-0 m-auto ${
+        router.pathname === '/' ? '' : 'shadow-lg'
+      }  flex px-5 z-[999]  items-center`}
+    >
       <div className="flex justify-between w-full max-w-[1900px] mx-auto px-[5vw] items-center">
         <div
           className="w-full relative z-40 cursor-pointer"
           onClick={() => router.push('/')}
-        >  
+        >
           <div className="relative w-[140px] h-[40px]">
             <Image alt="" src={logoOmegaWhite} layout="fill" />
           </div>
@@ -25,13 +29,13 @@ const Navbar = () => {
         <div className="lg:flex gap-12 items-end  hidden justify-between">
           <Link
             className={`${
-              router.pathname === '/'
+              router.pathname === '/home'
                 ? ' underline underline-offset-8 font-semibold'
                 : 'text-black font-semibold hover:text-white transition-colors'
             } text-normal flex-initial w-full text-center`}
-            href="/"
+            href="/home"
           >
-            Inicio
+            Home
           </Link>
           <Link href="/seguros">
             <button
