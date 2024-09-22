@@ -19,19 +19,16 @@ const WeFirstSection = () => {
           ¿Quienes somos?
         </h1>
         <p className="text-white text-small font-normal xl:text-[16px] text-justify leading-[22px]">
-          El Infernal Fest es un festival anual de música que tiene lugar en
-          Bogotá durante el mes de octubre, coincidiendo con las celebraciones
-          de Halloween. Este evento está abierto a todo público y se destaca por
-          su ambiente inclusivo y festivo.
+          El Infernal Fest es un festival de música que se hace cada año en
+          Bogotá durante octubre, justo a tiempo para celebrar Halloween.
           <br />
           <br />
-          Como un festival sin ánimo de lucro, nuestro principal objetivo es
-          apoyar y ofrecer una plataforma a bandas emergentes de diversos
-          géneros, brindándoles la oportunidad de mostrar su talento y conectar
-          con el público local. Además, El Infernal Fest es un punto de
-          encuentro donde la comunidad puede disfrutar de buena música,
-          compartir momentos con amigos y familiares, degustar dulces, bailar y
-          explorar una variedad de artesanías locales.
+          Como un festival sin fines de lucro, nuestra misión es apoyar a bandas
+          emergentes de diferentes géneros, dándoles un espacio para mostrar su
+          talento y conectar con el público. Además, El Infernal Fest es un
+          lugar donde la comunidad puede disfrutar de buena música, pasarla
+          genial con amigos y familia, comer dulces, bailar, poguear y explorar
+          artesanías locales.
           <br />
           <br />
           Nos enorgullecemos de ser una comunidad punk rockanrolera que trabaja

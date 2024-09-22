@@ -7,7 +7,7 @@ function CountdownTimer() {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    const targetDate: any = new Date('2024-10-10T23:59:59') // Fecha objetivo
+    const targetDate: any = new Date('2024-13-10T23:59:59') // Fecha objetivo
     const intervalId = setInterval(() => {
       const now: any = new Date()
       const difference = targetDate - now
