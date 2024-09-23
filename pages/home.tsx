@@ -62,12 +62,18 @@ const Home = ({ banners }: { banners: any[] }) => {
                   </label>
                   <label className=" text-redOmega2 flex">
                     ●Seguir nuestra pagina de{' '}
-                    <a href="https://www.instagram.com/zisifopunk/">
-                      instagram
+                    <a
+                      className=" font-bold underline "
+                      href="https://www.instagram.com/zisifopunk/"
+                    >
+                      &nbsp; instagram
                     </a>{' '}
                     y{' '}
-                    <a href="https://www.facebook.com/profile.php?id=100064306854720">
-                      facebook
+                    <a
+                      className="font-bold underline"
+                      href="https://www.facebook.com/profile.php?id=100064306854720"
+                    >
+                      &nbsp; facebook
                     </a>
                   </label>
                   <label className=" text-redOmega2 ">
