@@ -61,19 +61,19 @@ const Home = ({ banners }: { banners: any[] }) => {
                     importa sin son grabaciones de garaje.
                   </label>
                   <label className=" text-redOmega2 flex">
-                    ●Seguir nuestra pagina de{' '}
+                    ●Seguir nuestra pagina de &nbsp;
                     <a
                       className=" font-bold underline "
                       href="https://www.instagram.com/zisifopunk/"
                     >
-                      &nbsp; instagram
+                      instagram
                     </a>{' '}
-                    y{' '}
+                    &nbsp; y&nbsp;{' '}
                     <a
                       className="font-bold underline"
                       href="https://www.facebook.com/profile.php?id=100064306854720"
                     >
-                      &nbsp; facebook
+                      facebook
                     </a>
                   </label>
                   <label className=" text-redOmega2 ">
