@@ -65,6 +65,7 @@ const Home = ({ banners }: { banners: any[] }) => {
                     <a
                       className=" font-bold underline "
                       href="https://www.instagram.com/zisifopunk/"
+                      rel="noreferrer"
                     >
                       instagram
                     </a>{' '}
@@ -72,6 +73,7 @@ const Home = ({ banners }: { banners: any[] }) => {
                     <a
                       className="font-bold underline"
                       href="https://www.facebook.com/profile.php?id=100064306854720"
+                      rel="noreferrer"
                     >
                       facebook
                     </a>
