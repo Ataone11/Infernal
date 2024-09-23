@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="text-white hidden flex-col justify-center items-center md:justify-start md:items-start lg:flex">
             <a
-              href="https://www.facebook.com/profile.php?id=61563871315722"
+              href="https://www.facebook.com/profile.php?id=100064306854720"
               target="_blank"
               rel="noreferrer"
               className="underline"
@@ -97,7 +97,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.facebook.com/profile.php?id=61563871315722"
+            href="https://www.facebook.com/profile.php?id=100064306854720"
             target="_blank"
             rel="noreferrer"
           >
@@ -108,7 +108,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.facebook.com/profile.php?id=61563871315722"
+            href="https://www.facebook.com/profile.php?id=100064306854720"
             target="_blank"
             rel="noreferrer"
           >
@@ -119,7 +119,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.instagram.com/infernalfestt/"
+            href="https://www.instagram.com/zisifopunk/"
             target="_blank"
             rel="noreferrer"
           >

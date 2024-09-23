@@ -57,10 +57,18 @@ const Home = ({ banners }: { banners: any[] }) => {
                     pueda visualizar la trayectoria de la banda
                   </label>
                   <label className=" text-redOmega2 ">
-                    ●Se requiere tener al menos 1 o 2 canciones grabadas.
+                    ●Se requiere tener al menos 1 o 2 canciones grabadas, no
+                    importa sin son grabaciones de garaje.
                   </label>
-                  <label className=" text-redOmega2 ">
-                    ●Seguir nuestra pagina de instagram y facebook
+                  <label className=" text-redOmega2 flex">
+                    ●Seguir nuestra pagina de{' '}
+                    <a href="https://www.instagram.com/zisifopunk/">
+                      instagram
+                    </a>{' '}
+                    y{' '}
+                    <a href="https://www.facebook.com/profile.php?id=100064306854720">
+                      facebook
+                    </a>
                   </label>
                   <label className=" text-redOmega2 ">
                     ●Enviar 2 fotos grupales de los artistas.
