@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import React from 'react'
-import FormContacto from '../contacto/FormContacto'
 
 const Personas = () => {
   interface Props {
@@ -110,10 +108,6 @@ const Personas = () => {
       image: '/seguros/bananos.jpg'
     }
   ]
-  const play = () => {
-    var audio: any = document.getElementById('a1')
-    audio.play()
-  }
 
   /*  const ImageShadow = ({ img }: any) => (
     <div className=" bg-black">
