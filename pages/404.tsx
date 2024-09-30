@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import enriqueImage from '../assets/images/personOmega.png'
+import enriqueImage from '../assets/images/icono.png'
 
 const NotFound = () => {
   const router = useRouter()
@@ -8,7 +8,7 @@ const NotFound = () => {
     router.push('/')
   }
   return (
-    <section className="w-full mt-24 flex flex-col justify-center items-center relative">
+    <section className="w-full bg-black  flex flex-col justify-center items-center relative h-screen">
       <div className="flex flex-col items-center my-auto space-y-5">
         <h2 className="text-[160px] leading-[104px] text-greyOmega tracking-[0.2em] font-bold">
           404
@@ -24,7 +24,7 @@ const NotFound = () => {
           Ir al inicio
         </button>
       </div>
-      <div className="mt-12 invisible">
+      <div className="mt-8 invisible">
         <img src={enriqueImage.src} alt="" />
       </div>
       <div className="absolute bottom-0">

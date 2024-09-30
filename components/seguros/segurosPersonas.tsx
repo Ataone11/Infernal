@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import React from 'react'
 import FormContacto from '../contacto/FormContacto'
 
 const Personas = () => {
@@ -109,6 +110,11 @@ const Personas = () => {
       image: '/seguros/bananos.jpg'
     }
   ]
+  const play = () => {
+    var audio: any = document.getElementById('a1')
+    audio.play()
+  }
+
   /*  const ImageShadow = ({ img }: any) => (
     <div className=" bg-black">
       <div className="min-w-[250px] w-full relative flex lg:hidden lg:pt-8 h-[100%] mx-auto after:bg-red-900 after:content-[''] after:absolute after:w-[80%] after:h-full after:rounded-2xl after:top-3 image-shadow after:self-end after:right-0">
@@ -140,19 +146,42 @@ const Personas = () => {
   ) */
   return (
     <div className="bg-black h-full w-full container mx-auto px-5">
-      <div className="lg:grid lg:grid-cols-3 lg:justify-between my-5  md:grid md:grid-cols-2">
+      <div className=" xl:grid-cols-3 lg:justify-between my-5  lg:grid lg:grid-cols-2">
         <br className="block md:hidden" />
         {dataSecure3.map((item: Props) => (
-          <div key={item.id}>
-            <div className="container mx-auto flex flex-col">
-              <Image alt="" src={item.image} />
-              <h1 className="text-2xl text-white my-10 font-myriad font-bold tracking-[4px] text-center hidden lg:block lg:my-6"></h1>
-              <h1 className="text-2xl text-white my-10 lg:my-5 font-myriad font-bold text-center  ">
+          <div className=" flex my-5" key={item.id}>
+            <div className="container w-[400px] min-h-[500px] mx-auto flex flex-col">
+              <Image
+                width={400}
+                height={500}
+                layout="fixed"
+                alt=""
+                objectFit="cover"
+                objectPosition="center-top"
+                src={item.image}
+              />
+
+              <div className="col flex justify-center my-2">
+                <audio
+                  controls
+                  className="bg-black"
+                  id="a1"
+                  src="/audios/hw.mp3"
+                ></audio>
+              </div>
+              <h1 className=" text-white my-2 font-myriad tracking-[4px] text-xs  text-justify block lg:my-1">
+                Absoloum es una banda de Death Metal Punk de la ciudad de
+                Bogotá, creada en 2016 por Edward Rivera La banda abarca sonidos
+                estridentes, violentos de atmósferas oscuras que sumergen al
+                oyente en una variedad de emociones que van desde la alegría
+                hasta la rabia
+              </h1>
+
+              <h1 className="text-2xl text-white my-3  font-myriad font-bold text-center  ">
                 {item.title}
               </h1>
 
-              <div className="lg:justify-center flex my-8 lg:my-0 items-center justify-between">
-                <h1 className="text-xl text-greyOmega  font-myriad font-bold tracking-widest text-left block lg:hidden"></h1>
+              <div className="lg:justify-center flex my-8 lg:my-0 items-center justify-end">
                 <Link href="/seguros/seguro_vida">
                   <button className="btn-primary  lg:w-auto lg:h-auto align-middle text-center h-[60%] w-[20%]  md:w-[40%] min-w-[100px] ml-1">
                     Ver más
@@ -164,7 +193,6 @@ const Personas = () => {
           </div>
         ))}
       </div>
-      <FormContacto />
     </div>
   )
 }

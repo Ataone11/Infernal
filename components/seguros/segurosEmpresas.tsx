@@ -36,7 +36,12 @@ const Empresas = () => {
       <div className="md:flex md:justify-between my-5">
         <br className="block lg:hidden" />
         <div className="container mx-auto flex flex-col">
-          <Image alt="" src={'/seguros/Seguros_Empresas_PYMES.jpg'} />
+          <Image
+            width={400}
+            height={500}
+            alt=""
+            src={'/seguros/Seguros_Empresas_PYMES.jpg'}
+          />
           <h1 className="text-2xl text-greyOmega my-10 font-myriad font-bold tracking-widest text-center hidden lg:block lg:my-6">
             SEGUROS PARA PYMES
           </h1>
@@ -52,7 +57,12 @@ const Empresas = () => {
           </div>
         </div>
         <div className="container mx-auto flex flex-col">
-          <Image alt="" src={'/seguros/Seguros_Empresas_Estatales.jpg'} />
+          <Image
+            width={400}
+            height={500}
+            alt=""
+            src={'/seguros/Seguros_Empresas_Estatales.jpg'}
+          />
           <h1 className="text-2xl text-greyOmega my-10 font-myriad font-bold tracking-widest text-center hidden lg:block lg:my-6">
             SEGUROS ESTATALES
           </h1>
