@@ -4,7 +4,7 @@ import logoOmegaWhite from '../../assets/images/home/infernal.png'
 import facebookIcon from '../../assets/icons/facebookIcon.svg'
 import twitterIcon from '../../assets/icons/twitterIcon.svg'
 import InstaIcon from '../../assets/icons/InstaIcon.svg'
-import TikTokIcon from '../../assets/icons/tiktokIcon.svg'
+import dc from '../../assets/images/dc-house.png'
 
 const Footer = () => {
   return (
@@ -86,17 +86,6 @@ const Footer = () => {
         </div>
         <div className="flex gap-5 items-center">
           <a
-            href="https://vm.tiktok.com/ZMLyxRTXo/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={TikTokIcon.src}
-              className="hover:scale-105 transition-all cursor-pointer"
-              alt=""
-            />
-          </a>
-          <a
             href="https://www.facebook.com/profile.php?id=100064306854720"
             target="_blank"
             rel="noreferrer"
@@ -129,6 +118,36 @@ const Footer = () => {
               alt=""
             />
           </a>
+          <div className="hidden md:flex mx-auto flex-col max-w-[90px]">
+            <div className="relative w-[80px] h-[80px]  ">
+              <Image
+                alt=""
+                src={dc}
+                layout="fill"
+                className="rounded-t-lg md:rounded-r-xl"
+                objectFit="cover"
+                objectPosition="top"
+              />
+            </div>
+            <p className="relative text-white font-medium text-xs text-center">
+              Sound System
+            </p>
+          </div>
+        </div>
+        <div className="md:hidden flex mx-auto flex-col max-w-[90px]">
+          <div className="relative w-[80px] h-[80px]  ">
+            <Image
+              alt=""
+              src={dc}
+              layout="fill"
+              className="rounded-t-lg md:rounded-r-xl"
+              objectFit="cover"
+              objectPosition="top"
+            />
+          </div>
+          <p className="relative text-white font-medium text-xs text-center italic">
+            Sound System
+          </p>
         </div>
       </div>
     </div>

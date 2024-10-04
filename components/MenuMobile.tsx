@@ -67,7 +67,17 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
           Nosotros
         </Link>
         <hr className=" w-[90%]" />
-
+        <Link
+          onClick={() => setToggle(true)}
+          className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
+            router.pathname === '/nosotros'
+              ? 'text-redOmega'
+              : 'text-blackOmega hover:text-redOmega transition-colors'
+          } text-normal`}
+          href="/riffa"
+        >
+          Sorteo
+        </Link>
         <hr className=" w-[90%]" />
 
         <Link href="/contacto">

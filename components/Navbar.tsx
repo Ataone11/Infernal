@@ -73,7 +73,17 @@ const Navbar = () => {
               Nosotros
             </button>
           </Link>
-
+          <Link href="/riffa">
+            <button
+              className={`${
+                router.pathname === '/nosotros'
+                  ? 'underline underline-offset-8 font-semibold'
+                  : 'text-black font-semibold hover:text-white transition-colors'
+              } text-normal w-full text-center`}
+            >
+              Sorteo
+            </button>
+          </Link>
           <Link href="/contacto">
             <button
               className={`${
