@@ -23,7 +23,7 @@ const Riffa = ({ team }: any) => {
               Para ganar
             </a>{' '}
             &nbsp; no es necesario estar presente en el evento, lo unico es que
-            tendra estar pendiente al Life para saber sobre el ganador o estar
+            tendra estar pendiente al Live para saber sobre el ganador o estar
             presente a la hora del sorteo.
             <br />
             <br />
@@ -54,8 +54,8 @@ const Riffa = ({ team }: any) => {
             ¡¡Tatto Horror!!
           </h1>
           <p className="text-white text-small font-normal xl:text-[16px] text-justify leading-[22px]">
-            los tatuajes serar estilo horror hallowen en donde el ganado pordra
-            escojer el diseño que mas le guste en el portafolio del tatuador que
+            los tatuajes seran estilo horror hallowen en donde el ganado pordra
+            escoger el diseño que mas le guste en el portafolio del tatuador que
             esta haciendo la rifa con nosotros. &nbsp;
             <a
               className=" font-bold underline "
