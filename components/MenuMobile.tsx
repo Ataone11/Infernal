@@ -10,7 +10,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
         toggle ? 'translate-x-full' : 'translate-x-0'
       } transition-all duration-300 ease-in-out top-0 z-30 left-0  bg-white/40 `}
     >
-      <div className="bg-white w-[80%] h-[70%] rounded-md flex flex-col items-center justify-center m-auto shadow-2xl">
+      <div className="bg-white w-[80%] h-[80%] rounded-md flex flex-col items-center justify-center m-auto shadow-2xl">
         <Link href="/home">
           <button
             onClick={() => setToggle(true)}
