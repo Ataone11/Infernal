@@ -59,7 +59,7 @@ const Riffa = ({ team }: any) => {
             esta haciendo la rifa con nosotros. &nbsp;
             <a
               className=" font-bold underline "
-              href="https://www.instagram.com/famtatto08?utm_source=qr&igsh=MWdra2RwZ3o0MDRzZA=="
+              href="https://www.instagram.com/andrutatxx/"
               target="_blank"
               rel="noreferrer"
             >
@@ -96,7 +96,7 @@ const Riffa = ({ team }: any) => {
             <button
               onClick={() =>
                 window.open(
-                  'https://api.whatsapp.com/send?phone=573505082555&text=Hola%2C%20quiero%20comprar%20un%20numero%20para%20el%20tattoo%20de%205%20Lukitas',
+                  'https://api.whatsapp.com/send?phone=573017457648&text=Hola%2C%20quiero%20comprar%20un%20numero%20para%20el%20tattoo%20de%205%20Lukitas',
                   '_blank'
                 )
               }
@@ -123,7 +123,7 @@ const Riffa = ({ team }: any) => {
             <button
               onClick={() =>
                 window.open(
-                  'https://api.whatsapp.com/send?phone=573505082555&text=Hola%2C%20quiero%20comprar%20un%20numero%20para%20el%20tattoo%20de%10%20Lukitas',
+                  'https://api.whatsapp.com/send?phone=573017457648&text=Hola%2C%20quiero%20comprar%20un%20numero%20para%20el%20tattoo%20de%10%20Lukitas',
                   '_blank'
                 )
               }
