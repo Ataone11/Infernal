@@ -2,12 +2,13 @@ import Image from 'next/image'
 import Carousel from '../components/nosotros/Carousel'
 import fantasma from '../assets/images/fantama.png'
 import tabla from '../assets/images/tabla.jpg'
+import tabla2 from '../assets/images/tabla10.jpeg'
 
 const Riffa = ({ team }: any) => {
   return (
     <div className="bg-black min-h-[2300px] lg:min-h-[1700px] xl:min-h-[1800px] ">
       <div className="w-full md:w-full container mx-auto pt-8">
-        <div className="w-11/12 lg:w-6/12 mx-auto space-y-5">
+        <div className="w-11/12 lg:w-7/12 mx-auto space-y-5">
           <h3 className="uppercase font-bold text-redOmega text-large lg:text-extraLarge tracking-[0.2em] text-center">
             Tatto Mania
           </h3>
@@ -17,14 +18,12 @@ const Riffa = ({ team }: any) => {
           <p className="  text-white text-extraSmall text-justify sm:text-small md:text-[16px]">
             Bueno esta dinamica la hacemos con el motivo de recolectar algo de
             fondos para el evento, por loque haremos el sorteo de 2 tatuajes
-            estilo blackwork el dia 31 de octubre, el sorteo de estos se hara
-            durante un envivo en el mismo evento, &nbsp;
+            estilo blackwork, el sorteo de estos se hara legitimamente con los 2
+            ultimos digitos de la loteria de &nbsp;
             <a className=" font-bold underline text-redOmega  ">
-              Para ganar
+              ASTRO LUNA
             </a>{' '}
-            &nbsp; no es necesario estar presente en el evento, lo unico es que
-            tendra estar pendiente al Live para saber sobre el ganador o estar
-            presente a la hora del sorteo.
+            &nbsp; la noche 31 de octubre a las 11:00 pm en Halloween👻.
             <br />
             <br />
             Seran 2 Tattoos, uno de 10x6 cm y tendra un valor de 5k el numero y
@@ -55,15 +54,19 @@ const Riffa = ({ team }: any) => {
           </h1>
           <p className="text-white text-small font-normal xl:text-[16px] text-justify leading-[22px]">
             los tatuajes seran estilo horror hallowen en donde el ganado pordra
-            escoger el diseño que mas le guste en el portafolio del tatuador que
-            esta haciendo la rifa con nosotros. &nbsp;
+            escoger el diseño que mas le guste en el portafolio de nuestro
+            tatuador &nbsp;
+            <a className=" font-bold underline text-redOmega  ">
+              Andrutatxx
+            </a>{' '}
+            &nbsp;- &nbsp;
             <a
               className=" font-bold underline "
               href="https://www.instagram.com/andrutatxx/"
               target="_blank"
               rel="noreferrer"
             >
-              instagram
+              Instagram
             </a>{' '}
             &nbsp; la compra de los numeros del sorteo sea hacen por medio de
             nequi y daviplata
@@ -112,7 +115,7 @@ const Riffa = ({ team }: any) => {
           </p>
           <Image
             alt=""
-            src={tabla}
+            src={tabla2}
             layout="fixed"
             objectFit="cover"
             height={400}
