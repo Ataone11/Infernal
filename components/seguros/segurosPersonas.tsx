@@ -12,7 +12,7 @@ import noname from '../../assets/images/bandas/noname.jpeg'
 import menos from '../../assets/images/bandas/menosprecio.jpeg'
 import dc from '../../assets/images/bandas/dcpunk.jpg'
 import agresion from '../../assets/images/bandas/agression.jpeg'
-import battousai from '../../assets/images/bandas/batu.jpg'
+import battousai from '../../assets/images/bandas/battousai.jpeg'
 import detonante from '../../assets/images/bandas/detonante.jpg'
 
 const Personas = () => {
