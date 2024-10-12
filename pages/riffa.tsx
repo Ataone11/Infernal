@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Carousel from '../components/nosotros/Carousel'
 import fantasma from '../assets/images/fantama.png'
-import tabla from '../assets/images/tabla.jpg'
-import tabla2 from '../assets/images/tabla10.jpeg'
+import tabla from '../assets/images/tabla 5k.png'
+import tabla2 from '../assets/images/tabla 10k.png'
 
 const Riffa = ({ team }: any) => {
   return (
@@ -12,9 +12,7 @@ const Riffa = ({ team }: any) => {
           <h3 className="uppercase font-bold text-redOmega text-large lg:text-extraLarge tracking-[0.2em] text-center">
             Tatto Mania
           </h3>
-          <h3 className="uppercase font-bold text-redOmega text-medium lg:text-large tracking-[0.2em] text-center">
-            Sorteo Live
-          </h3>
+
           <p className="  text-white text-extraSmall text-justify sm:text-small md:text-[16px]">
             Bueno esta dinamica la hacemos con el motivo de recolectar algo de
             fondos para el evento, por loque haremos el sorteo de 2 tatuajes
