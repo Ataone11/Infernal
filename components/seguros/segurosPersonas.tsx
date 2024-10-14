@@ -19,6 +19,7 @@ import tote from '../../assets/images/bandas/tote.png'
 import sonora from '../../assets/images/bandas/sonora.jpg'
 import disforia from '../../assets/images/bandas/disforia.png'
 import ezkozor from '../../assets/images/bandas/ezkozor.png'
+import absolum from '../../assets/images/bandas/absoloum.png'
 
 const Personas = () => {
   interface Props {
@@ -206,6 +207,15 @@ const Personas = () => {
         'Sonora Rebel es una agrupación bogotana que transita entre el punk, el ska y las sonoridades que acompañen sus discursos contestatarios con salpicaduras de historias de vida. Se origina en el año 2006 bajo el nombre de Involución, con un sonido mucho más cercano al punk duro y la realidad cruda de la decadencia social. Sin embargo, el sonido evoluciona de manera progresiva con sus cambios de escuadra, lo que los lleva a experimentar nuevas líneas de letras y melodías. Sonora porque vibra entre el ska y el punk, pero se permite tener apertura para converger a través de diferentes armonías en medio de la diversión, el baile y la alegría. Rebel, porque no se abandona la idea de una sociedad que pueda transformar las realidades injustas y poco equilibradas, usando la música como herramienta para despertar miradas críticas manteniendo la esperanza. Las influencias de la agrupación tienen un alto tinte de heterogeneidad, sonidos como: Miles Davis, Death, Iggy Pop, Lee Morgan, The Beatles, Stevie Ray Vaughan, Envidia Kotxina, Manu Chao, Foo Fighters, Incubus, Primus y Jamiroquai han trazado las líneas de arreglos, propuestas y curiosamente, unidad en la agrupación. ',
       image: sonora,
       audio: '/audios/sonora.mp3'
+    },
+    {
+      id: 2,
+      title: 'Absoloum',
+      negrilla: 'https://www.facebook.com/Absoloum',
+      description:
+        'Absoloum es una banda de Death Metal Punk de la ciudad de Bogotá, creada en 2016 por Edward Rivera La banda abarca sonidos estridentes, violentos de atmósferas oscuras que sumergen al oyente en una variedad de emociones que van desde la alegría hasta la rabia',
+      image: absolum,
+      audio: '/audios/absoloum.mp3'
     }
   ]
 
