@@ -16,7 +16,7 @@ import battousai from '../../assets/images/bandas/battousai.jpeg'
 import detonante from '../../assets/images/bandas/detonante.png'
 import archilunaticos from '../../assets/images/bandas/archilunaticos.png'
 import tote from '../../assets/images/bandas/tote.png'
-import sonora from '../../assets/images/bandas/sonora.png'
+import sonora from '../../assets/images/bandas/sonora.jpg'
 import disforia from '../../assets/images/bandas/disforia.png'
 import ezkozor from '../../assets/images/bandas/ezkozor.png'
 
