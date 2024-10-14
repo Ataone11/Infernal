@@ -37,11 +37,10 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <Link href="/seguros">
+          <Link href="/artistas">
             <button
-              disabled={true}
               className={`${
-                router.pathname === '/seguros'
+                router.pathname === '/artistas'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
               } text-normal w-full text-center`}
@@ -76,7 +75,7 @@ const Navbar = () => {
           <Link href="/riffa">
             <button
               className={`${
-                router.pathname === '/nosotros'
+                router.pathname === '/riffa'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
               } text-normal w-full text-center`}
@@ -86,6 +85,7 @@ const Navbar = () => {
           </Link>
           <Link href="/contacto">
             <button
+              disabled={true}
               className={`${
                 router.pathname === '/contacto'
                   ? 'underline underline-offset-8 font-semibold'

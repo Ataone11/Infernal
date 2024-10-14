@@ -40,12 +40,11 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
         </Link>
         <hr className=" w-[90%]" />
 
-        <Link href="/seguros">
+        <Link href="/artistas">
           <button
             onClick={() => setToggle(true)}
-            disabled={true}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
-              router.pathname === '/seguros'
+              router.pathname === '/artistass'
                 ? 'text-redOmega'
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
@@ -82,11 +81,12 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
 
         <Link href="/contacto">
           <button
+            disabled={true}
             onClick={() => setToggle(true)}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
               router.pathname === '/contacto'
                 ? 'text-redOmega'
-                : 'text-blackOmega hover:text-redOmega transition-colors'
+                : 'text-redOmega hover:text-redOmega transition-colors'
             } text-normal`}
           >
             Inscripcion
