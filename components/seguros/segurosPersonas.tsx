@@ -16,7 +16,7 @@ import battousai from '../../assets/images/bandas/battousai.jpeg'
 import detonante from '../../assets/images/bandas/detonante.png'
 import archilunaticos from '../../assets/images/bandas/archilunaticos.png'
 import tote from '../../assets/images/bandas/tote.png'
-import sonora from '../../assets/images/bandas/sonora.jpg'
+import sonora from '../../assets/images/bandas/llenitos de ruido.png'
 import disforia from '../../assets/images/bandas/disforia.png'
 import ezkozor from '../../assets/images/bandas/ezkozor.png'
 import absolum from '../../assets/images/bandas/absoloum.png'
@@ -201,12 +201,12 @@ const Personas = () => {
     },
     {
       id: 2,
-      title: 'Sonora Rebel',
-      negrilla: 'https://www.facebook.com/SonoraRebelCol',
+      title: 'Llenitos de ruido',
+      negrilla:
+        'https://www.facebook.com/profile.php?id=61561296615230&mibextid=ZbWKwL',
       description:
-        'Sonora Rebel es una agrupación bogotana que transita entre el punk, el ska y las sonoridades que acompañen sus discursos contestatarios con salpicaduras de historias de vida. Se origina en el año 2006 bajo el nombre de Involución, con un sonido mucho más cercano al punk duro y la realidad cruda de la decadencia social. Sin embargo, el sonido evoluciona de manera progresiva con sus cambios de escuadra, lo que los lleva a experimentar nuevas líneas de letras y melodías. Sonora porque vibra entre el ska y el punk, pero se permite tener apertura para converger a través de diferentes armonías en medio de la diversión, el baile y la alegría. Rebel, porque no se abandona la idea de una sociedad que pueda transformar las realidades injustas y poco equilibradas, usando la música como herramienta para despertar miradas críticas manteniendo la esperanza. Las influencias de la agrupación tienen un alto tinte de heterogeneidad, sonidos como: Miles Davis, Death, Iggy Pop, Lee Morgan, The Beatles, Stevie Ray Vaughan, Envidia Kotxina, Manu Chao, Foo Fighters, Incubus, Primus y Jamiroquai han trazado las líneas de arreglos, propuestas y curiosamente, unidad en la agrupación. ',
-      image: sonora,
-      audio: '/audios/sonora.mp3'
+        'Somos una banda de ska punk emergente de la ciudad de Bogotá conformada por 6 músicos, en su inicio fundada por Yeni (clarinetista y vocalista), Mao (bajista y teclista) y Pablo (guitarrista y baterista) quien con la ayuda y el conocimiento cultural y artistico de Pinky (baterista y guitarrista) han logrado consolidar una banda  que rescata los mejores sonidos del ska y el punk  en español, de la decada de los 90´s y 80´s, actualmente la banda se encuentra en la composición de su primer producto discografico de larga duración. ',
+      image: sonora
     },
     {
       id: 2,
@@ -264,15 +264,17 @@ const Personas = () => {
                 objectPosition="center-top"
                 src={item.image}
               />
+              {item.audio! && (
+                <div className="col flex justify-center my-2">
+                  <audio
+                    controls
+                    className="bg-black"
+                    id="a1"
+                    src={item.audio}
+                  ></audio>
+                </div>
+              )}
 
-              <div className="col flex justify-center my-2">
-                <audio
-                  controls
-                  className="bg-black"
-                  id="a1"
-                  src={item.audio}
-                ></audio>
-              </div>
               <h1 className=" text-white my-2 font-myriad tracking-[4px] text-xs  text-justify block lg:my-1">
                 {item.description}
               </h1>
