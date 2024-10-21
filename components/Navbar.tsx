@@ -35,7 +35,7 @@ const Navbar = () => {
             } text-normal flex-initial w-full text-center`}
             href="/home"
           >
-            Home
+            Flayer
           </Link>
           <Link href="/artistas">
             <button

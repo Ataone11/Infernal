@@ -20,7 +20,7 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
           >
-            Home
+            Flayer
           </button>
         </Link>
         <hr className=" w-[90%]" />

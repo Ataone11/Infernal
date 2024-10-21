@@ -7,7 +7,7 @@ function CountdownTimer() {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    const targetDate: any = new Date('2024-10-13T23:59:59') // Fecha objetivo
+    const targetDate: any = new Date('2024-10-27T23:59:59') // Fecha objetivo
     const intervalId = setInterval(() => {
       const now: any = new Date()
       const difference = targetDate - now
@@ -45,28 +45,28 @@ function CountdownTimer() {
     <div className="flex items-end md:items-center justify-center w-full gap-6 count-down-main text-redOmega">
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
         <div className="flex flex-col">
-          <span className="countdown font-mono text-[7vw]">
+          <span className="countdown font-mono text-[4vw]">
             <span style={{ '--value': days } as CustomCSSProperties}></span>
           </span>
-          <h1 className="md:text-4xl">Días</h1>
+          <h1 className="md:text-2xl">Días</h1>
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-[7vw]">
+          <span className="countdown font-mono text-[4vw]">
             <span style={{ '--value': hours } as CustomCSSProperties}></span>
           </span>
-          <h1 className="md:text-4xl">Horas</h1>
+          <h1 className="md:text-2xl">Horas</h1>
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-[7vw]">
+          <span className="countdown font-mono text-[4vw]">
             <span style={{ '--value': minutes } as CustomCSSProperties}></span>
           </span>
-          <h1 className="md:text-4xl">Min</h1>
+          <h1 className="md:text-2xl">Min</h1>
         </div>
         <div className="flex flex-col">
-          <span className="countdown font-mono text-[7vw]">
+          <span className="countdown font-mono text-[4vw]">
             <span style={{ '--value': seconds } as CustomCSSProperties}></span>
           </span>
-          <h1 className="md:text-4xl">Seg</h1>
+          <h1 className="md:text-2xl">Seg</h1>
         </div>
       </div>
     </div>
