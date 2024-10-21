@@ -13,7 +13,7 @@ const Home = ({ banners }: { banners: any[] }) => {
       <link rel="icon" href="../assets/images/icono.png" />
       <div className="bg-black h-full">
         <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw]  top-14 z-10 ">
-          <div className=" relative flex flex-col h-[460px] sm:h-[900px] w-screen sm:w-[600px]  mx-auto my-10">
+          <div className=" relative flex flex-col h-[460px] sm:h-[900px] w-[320px] sm:w-[600px]  mx-auto my-10">
             <Image alt="" src={flayer} layout="fill" objectFit="cover" />
           </div>
 
