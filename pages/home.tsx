@@ -6,14 +6,14 @@ import CountdownTimer31 from '../components/home/timer31'
 
 const Home = ({ banners }: { banners: any[] }) => {
   return (
-    <div className="bg-black w-full  min-h-[1200px] sm:min-h-screen lg:min-h-[140vh]">
+    <div className="bg-black w-full  min-h-[700px] sm:min-h-[1200px] lg:min-h-[140vh]">
       <div className=" w-11/12 m-auto container ">
         <Banner banner={banners} />
       </div>
       <link rel="icon" href="../assets/images/icono.png" />
       <div className="bg-black h-full">
         <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw]  top-14 z-10 ">
-          <div className=" relative flex flex-col h-[900px] w-[600px]  mx-auto my-10">
+          <div className=" relative flex flex-col h-[460px] sm:h-[900px] w-screen sm:w-[600px]  mx-auto my-10">
             <Image alt="" src={flayer} layout="fill" objectFit="cover" />
           </div>
 
