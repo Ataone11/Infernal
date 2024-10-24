@@ -48,11 +48,10 @@ const Navbar = () => {
               Artistas
             </button>
           </Link>
-          <Link href="/asesorias">
+          <Link href="/horarios">
             <button
-              disabled={true}
               className={`${
-                router.pathname === '/asesorias'
+                router.pathname === '/horarios'
                   ? 'underline underline-offset-8 font-semibold'
                   : 'text-black font-semibold hover:text-white transition-colors'
               } text-normal w-full text-center`}

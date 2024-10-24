@@ -13,7 +13,7 @@ const Home = ({ banners }: { banners: any[] }) => {
       <link rel="icon" href="../assets/images/icono.png" />
       <div className="bg-black h-full">
         <div className="lg:static absolute lg:w-auto w-screen lg:h-auto h-[60vw]  top-14 z-10 ">
-          <div className=" relative flex flex-col h-[460px] sm:h-[900px] w-[320px] sm:w-[600px]  mx-auto my-10">
+          <div className=" relative flex flex-col h-[460px] sm:h-[950px] w-[320px] sm:w-[660px]  mx-auto my-10">
             <Image alt="" src={flayer} layout="fill" objectFit="cover" />
           </div>
 
@@ -28,7 +28,7 @@ const Home = ({ banners }: { banners: any[] }) => {
                 </div>
                 <div className=" flex flex-col">
                   <div className=" text-redOmega2 text-base md:text-xl lg:text-3xl flex justify-center font-extrabold underline mx-auto">
-                    31 Oct - Monumento del parkway
+                    2 Nov - Monumento del parkway
                   </div>
                   <CountdownTimer31 />
                 </div>

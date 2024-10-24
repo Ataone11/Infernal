@@ -25,12 +25,11 @@ const MenuMobile = ({ toggle, setToggle }: any) => {
         </Link>
         <hr className=" w-[90%]" />
 
-        <Link href="/asesorias">
+        <Link href="/horarios">
           <button
             onClick={() => setToggle(true)}
-            disabled={true}
             className={`text-base font-semibold transition-colors py-7  flex justify-center items-center w-full ${
-              router.pathname === '/asesorias'
+              router.pathname === '/horarios'
                 ? 'text-redOmega'
                 : 'text-blackOmega hover:text-redOmega transition-colors'
             } text-normal`}
