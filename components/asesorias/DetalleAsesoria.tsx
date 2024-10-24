@@ -295,7 +295,9 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">12:00 am</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Fusilia</h1>
+                      <h1 className=" text-center text-red-700  ">
+                        Contaminantes
+                      </h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
@@ -309,25 +311,21 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">1:40 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">
-                        Escokozor{' '}
-                      </h1>
+                      <h1 className=" text-center text-red-700  ">Eskozor </h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">2:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">
-                        Contaminantes
-                      </h1>
+                      <h1 className=" text-center text-red-700  ">Fusilia</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">3:20 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Tote</h1>
+                      <h1 className=" text-center text-red-700  ">Ironside</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
@@ -355,7 +353,7 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">6:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Ironside</h1>
+                      <h1 className=" text-center text-red-700  ">Tote</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
@@ -382,7 +380,9 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">12:00 am</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Fusilia</h1>
+                      <h1 className=" text-center text-red-700  ">
+                        Contaminantes
+                      </h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
@@ -396,23 +396,21 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">1:40 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Escokozor</h1>
+                      <h1 className=" text-center text-red-700  ">Eskozor</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">2:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">
-                        Contaminantes
-                      </h1>
+                      <h1 className=" text-center text-red-700  ">Fusilia</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">3:20 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Tote</h1>
+                      <h1 className=" text-center text-red-700  ">Ironside</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
@@ -440,7 +438,7 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">6:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Ironside</h1>
+                      <h1 className=" text-center text-red-700  ">Tote</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
