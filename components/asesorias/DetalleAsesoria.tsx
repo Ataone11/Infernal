@@ -123,9 +123,7 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">2:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">
-                        Menozprezio
-                      </h1>
+                      <h1 className=" text-center text-red-700  ">Zisifo</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
@@ -220,9 +218,7 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">2:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">
-                        Menozprezio
-                      </h1>
+                      <h1 className=" text-center text-red-700  ">Zisifo</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
@@ -332,35 +328,37 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">4:10 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Zisifo</h1>
+                      <h1 className=" text-center text-red-700  ">
+                        Menozprezio
+                      </h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">5:00 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Berserker</h1>
+                      <h1 className=" text-center text-red-700  ">Zisifo</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">5:50 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Battousai</h1>
+                      <h1 className=" text-center text-red-700  ">Berserker</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">6:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Tote</h1>
+                      <h1 className=" text-center text-red-700  ">Battousai</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">7:20 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Smog</h1>
+                      <h1 className=" text-center text-red-700  ">Tote</h1>
                       <h1 className=" text-center text-red-700  ">
                         ........................................................
                       </h1>
@@ -417,35 +415,37 @@ const Detalle = () => {
                       <h1 className=" text-center text-red-700  ">4:10 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Zisifo</h1>
+                      <h1 className=" text-center text-red-700  ">
+                        Menozprezio
+                      </h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">5:00 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Berserker</h1>
+                      <h1 className=" text-center text-red-700  ">Zisifo</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">5:50 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Battousai</h1>
+                      <h1 className=" text-center text-red-700  ">Berserker</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">6:30 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Tote</h1>
+                      <h1 className=" text-center text-red-700  ">Battousai</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
                       <h1 className=" text-center text-red-700  ">7:20 pm</h1>
                     </div>
                     <div className="grid grid-cols-3 w-full mx-auto">
-                      <h1 className=" text-center text-red-700  ">Smog</h1>
+                      <h1 className=" text-center text-red-700  ">Tote</h1>
                       <h1 className=" text-center text-red-700  ">
                         ......................................
                       </h1>
